@@ -13,13 +13,14 @@ import { main } from "@earendil-works/pi-coding-agent";
 import { printBanner } from "./banner.js";
 import bilgiKomutlariExtension from "./extensions/bilgi-komutlari.js";
 import dusunceExtension from "./extensions/dusunce.js";
+import kankaHeaderExtension from "./extensions/kanka-header.js";
 import turkceAliaslarExtension from "./extensions/turkce-aliaslar.js";
 import turkceKomutlarExtension from "./extensions/turkce-komutlar.js";
 import turkceModExtension from "./extensions/turkce-mod.js";
 import subagentExtension from "./subagent/index.js";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.3.1";
+const VERSION = "0.3.2";
 
 /**
  * Komut satırı argümanlarında yardım/versiyon istenmiş mi?
@@ -99,11 +100,11 @@ async function calistir(): Promise<void> {
 		return;
 	}
 
-	// İnteraktif modda mıyız? (TTY varsa banner basabiliriz)
-	const interaktif = process.stdin.isTTY && process.stdout.isTTY && args.length === 0;
-	if (interaktif) {
-		printBanner(VERSION);
-	}
+	// İnteraktif modda banner basmıyoruz — çünkü TUI açılınca
+	// kanka-header extension'ı zaten kanka logosunu gösterir.
+	// Çift logo görünmesin diye burada baskılanıyor.
+	//
+	// Banner sadece --yardım flag'inde basılıyor (TUI açılmadan).
 
 	// Bundled workflow prompt'larını args'a otomatik enjekte et.
 	// Böylece /yap, /plan-yap, /yap-ve-incele, /debug, /refactor-incele komutları her zaman aktif olur.
@@ -115,6 +116,7 @@ async function calistir(): Promise<void> {
 	try {
 		await main(genisletilmisArgs, {
 			extensionFactories: [
+				kankaHeaderExtension,
 				turkceModExtension,
 				turkceKomutlarExtension,
 				turkceAliaslarExtension,

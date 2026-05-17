@@ -17,7 +17,7 @@ interface BundledAgentBilgi {
 	description: string;
 }
 
-const KANKA_VERSION = "0.3.1";
+const KANKA_VERSION = "0.3.2";
 
 /**
  * Paket içindeki bundled-agents/ klasöründen agent meta bilgisini okur.
@@ -72,7 +72,7 @@ export default function bilgiKomutlariExtension(pi: ExtensionAPI) {
 				"  /yap <görev>             kasif → planlayici → isci",
 				"  /plan-yap <görev>        kasif → planlayici",
 				"  /yap-ve-incele <görev>   isci → gozden-geciren → isci",
-				"  /debug <bug>             kasif → hata-avcisi",
+				"  /hata-ayikla <bug>      kasif → hata-avcisi",
 				"  /refactor-incele <hedef> kasif → refactorcu → gozden-geciren",
 				"",
 				"Manuel çağırmak için: `delege` tool'unu kullan.",

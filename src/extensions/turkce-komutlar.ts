@@ -35,7 +35,7 @@ const YARDIM_BOLUMLERI: YardimBolumu[] = [
 			{ turkce: "/yap <görev>", aciklama: "kasif → planlayici → isci (tam uygulama)" },
 			{ turkce: "/plan-yap <görev>", aciklama: "kasif → planlayici (sadece plan)" },
 			{ turkce: "/yap-ve-incele <görev>", aciklama: "isci → gozden-geciren → isci" },
-			{ turkce: "/debug <bug>", aciklama: "kasif → hata-avcisi (root cause)" },
+			{ turkce: "/hata-ayikla <bug>", aciklama: "kasif → hata-avcisi (root cause)" },
 			{ turkce: "/refactor-incele <hedef>", aciklama: "kasif → refactorcu → gozden-geciren" },
 		],
 	},

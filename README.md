@@ -26,7 +26,7 @@ $ kanka
 
 - 🇹🇷 **Türkçe-first** — sistem prompt'u, slash komutları ve kişilik tamamen Türkçe.
 - 🤝 **9 hazır subagent** — `kasif`, `planlayici`, `isci`, `gozden-geciren`, `mimar`, `hata-avcisi`, `test-yazari`, `refactorcu`, `docs-yazari`. Hepsi Türkçe konuşur.
-- 🔗 **5 hazır workflow** — `/yap`, `/plan-yap`, `/yap-ve-incele`, `/debug`, `/refactor-incele` (chain pipeline'lar).
+- 🔗 **5 hazır workflow** — `/yap`, `/plan-yap`, `/yap-ve-incele`, `/hata-ayikla`, `/refactor-incele` (chain pipeline'lar).
 - 🛠️ **4 temel araç** — `read`, `write`, `edit`, `bash`. Karmaşık olmadan iş görür.
 - 🧩 **Genişletilebilir** — skill, extension, prompt template, tema ekleyebilirsin.
 - 🔒 **MIT lisans** — açık kaynak, fork'la istediğini yap.
@@ -56,7 +56,7 @@ Türkçe slash komutlarıyla hazır workflow'lar:
 /yap kullanıcı kayıt sistemi ekle           # kasif → planlayici → isci
 /plan-yap auth akışını OAuth'a çevir         # kasif → planlayici (sadece plan)
 /yap-ve-incele input validation ekle      # isci → gozden-geciren → isci
-/debug login bozuk, neden?                # kasif → hata-avcisi (root cause)
+/hata-ayikla login bozuk, neden?          # kasif → hata-avcisi (root cause)
 /refactor-incele tüm fetch'leri axios'a   # kasif → refactorcu → gozden-geciren
 ```
 
@@ -116,7 +116,7 @@ Oturum içinde **35+ Türkçe slash komutu** kullanabilirsin:
 | `/yap <görev>` | kasif → planlayici → isci |
 | `/plan-yap <görev>` | kasif → planlayici (sadece plan) |
 | `/yap-ve-incele <görev>` | isci → gozden-geciren → isci |
-| `/debug <bug>` | kasif → hata-avcisi |
+| `/hata-ayikla <bug>` | kasif → hata-avcisi |
 | `/refactor-incele <hedef>` | kasif → refactorcu → gozden-geciren |
 
 ### 🗂️ Context yönetimi

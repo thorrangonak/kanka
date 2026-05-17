@@ -453,7 +453,7 @@ function buildSubagentSystemPromptSection(agents: AgentConfig[]): string {
 	satirlar.push("- `/yap <gorev>` — kasif -> planlayici -> isci (tam uygulama)");
 	satirlar.push("- `/plan-yap <gorev>` — kasif -> planlayici (sadece plan)");
 	satirlar.push("- `/yap-ve-incele <gorev>` — isci -> gozden-geciren -> isci");
-	satirlar.push("- `/debug <bug>` — kasif -> hata-avcisi (root cause)");
+	satirlar.push("- `/hata-ayikla <bug>` — kasif -> hata-avcisi (root cause)");
 	satirlar.push("- `/refactor-incele <hedef>` — kasif -> refactorcu -> gozden-geciren");
 	satirlar.push("");
 	satirlar.push("### Subagent kullanim ipuclari");
