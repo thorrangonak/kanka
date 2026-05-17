@@ -9,7 +9,7 @@
 
 import type { ExtensionAPI, Theme } from "@earendil-works/pi-coding-agent";
 
-const KANKA_VERSION = "0.3.2";
+const KANKA_VERSION = "0.3.3";
 
 function getKankaHeader(theme: Theme): string[] {
 	// ASCII art "kanka" — küçük ve şık

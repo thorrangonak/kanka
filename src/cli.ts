@@ -9,7 +9,7 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 import { fileURLToPath } from "node:url";
-import { main } from "@earendil-works/pi-coding-agent";
+import { main, SettingsManager, getAgentDir } from "@earendil-works/pi-coding-agent";
 import { printBanner } from "./banner.js";
 import bilgiKomutlariExtension from "./extensions/bilgi-komutlari.js";
 import dusunceExtension from "./extensions/dusunce.js";
@@ -20,7 +20,7 @@ import turkceModExtension from "./extensions/turkce-mod.js";
 import subagentExtension from "./subagent/index.js";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.3.2";
+const VERSION = "0.3.3";
 
 /**
  * Komut satırı argümanlarında yardım/versiyon istenmiş mi?
@@ -98,6 +98,32 @@ async function calistir(): Promise<void> {
 	if (meta === "versiyon") {
 		console.log(`kanka v${VERSION}`);
 		return;
+	}
+
+	// ════════════════════════════════════════════════════════════════════
+	// Pi brand baskılama — kullanıcı sadece kanka görsün
+	// ════════════════════════════════════════════════════════════════════
+	// Pi'nin update kontrolünü kapat ("New version X.X.X available, run pi update" mesajı görünmesin)
+	// API call'ları ve model registry'yi ETKİLEMEZ — sadece pi'nin kendi pi.dev'e
+	// yaptığı versiyon kontrol HTTP'sini iptal eder.
+	process.env.PI_SKIP_VERSION_CHECK = "1";
+
+	// Pi'nin startup dump'larını sustur:
+	//   - "Model scope: ..." listesi
+	//   - [Context], [Skills], [Prompts], [Extensions], [Themes] dump'ı
+	//   - Pi'nin keybinding hint'leri (kanka-header zaten başka gösteriyor)
+	//
+	// Bunlar pi'nin settings.json'ındaki `quietStartup` flag'i ile kontrol ediliyor.
+	// Kanka kullanıcısı zaten kanka deneyimini istiyor, otomatik sessize alıyoruz.
+	// Not: Bu `~/.pi/agent/settings.json`'a yazılır, yani pi tek başına açılınca da
+	// quiet başlatır. Pi'nin onboarding'ini geri istersen `pi config` ile ayarlayabilirsin.
+	try {
+		const sm = SettingsManager.create(process.cwd(), getAgentDir());
+		if (!sm.getQuietStartup()) {
+			sm.setQuietStartup(true);
+		}
+	} catch {
+		// Settings yazılamasa bile devam et — sadece startup biraz daha verbose olur.
 	}
 
 	// İnteraktif modda banner basmıyoruz — çünkü TUI açılınca

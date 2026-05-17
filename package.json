@@ -1,6 +1,6 @@
 {
   "name": "@thorrangonak/kanka",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "kanka — Türkçe konuşan terminal kodlama asistanı. 'Kanka, şunu yapsana.'",
   "type": "module",
   "bin": {

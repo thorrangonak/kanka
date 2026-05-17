@@ -17,7 +17,7 @@ interface BundledAgentBilgi {
 	description: string;
 }
 
-const KANKA_VERSION = "0.3.2";
+const KANKA_VERSION = "0.3.3";
 
 /**
  * Paket içindeki bundled-agents/ klasöründen agent meta bilgisini okur.
