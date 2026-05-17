@@ -6,21 +6,41 @@
  * Türkçe komutlar ve kanka markasını ekler.
  */
 
+import * as fs from "node:fs";
+import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 import { main } from "@earendil-works/pi-coding-agent";
 import { printBanner } from "./banner.js";
 import turkceKomutlarExtension from "./extensions/turkce-komutlar.js";
 import turkceModExtension from "./extensions/turkce-mod.js";
+import subagentExtension from "./subagent/index.js";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.1.0";
+const VERSION = "0.2.0";
 
 /**
  * Komut satırı argümanlarında yardım/versiyon istenmiş mi?
+ * Hem Türkçe (--yardım, --versiyon) hem İngilizce (--help, --version) bayrakları yakalar.
+ * Böylece pi'nin kendi help/version çıktısı asla görünmez; kullanıcı her zaman kanka brand'i görür.
  */
 function isYardimVeyaVersiyon(args: string[]): "yardim" | "versiyon" | null {
 	for (const arg of args) {
-		if (arg === "--yardım" || arg === "--yardim" || arg === "-y") return "yardim";
-		if (arg === "--versiyon" || arg === "-v" || arg === "--version") return "versiyon";
+		if (
+			arg === "--yardım" ||
+			arg === "--yardim" ||
+			arg === "-y" ||
+			arg === "--help" ||
+			arg === "-h"
+		) {
+			return "yardim";
+		}
+		if (
+			arg === "--versiyon" ||
+			arg === "--version" ||
+			arg === "-v"
+		) {
+			return "versiyon";
+		}
 	}
 	return null;
 }
@@ -82,16 +102,46 @@ async function calistir(): Promise<void> {
 		printBanner(VERSION);
 	}
 
+	// Bundled workflow prompt'larını args'a otomatik enjekte et.
+	// Böylece /yap, /plan-yap, /yap-ve-incele, /debug, /refactor-incele komutları her zaman aktif olur.
+	const bundledPromptsArgs = getBundledPromptArgs();
+	const genisletilmisArgs = [...bundledPromptsArgs, ...args];
+
 	// Pi'nin main fonksiyonunu kendi extension'larımızla çağır.
 	// extensionFactories listesi pi'nin extension yükleyicisine ek olarak çalışır.
 	try {
-		await main(args, {
-			extensionFactories: [turkceModExtension, turkceKomutlarExtension],
+		await main(genisletilmisArgs, {
+			extensionFactories: [
+				turkceModExtension,
+				turkceKomutlarExtension,
+				subagentExtension,
+			],
 		});
 	} catch (e: unknown) {
 		const mesaj = e instanceof Error ? e.message : String(e);
 		console.error(`\nHata kanka: ${mesaj}\n`);
 		process.exit(1);
+	}
+}
+
+/**
+ * Paketle birlikte gelen workflow prompt'larının yolunu döner.
+ * Her .md dosyası için pi'nin --prompt-template bayrağını üretir.
+ */
+function getBundledPromptArgs(): string[] {
+	const here = path.dirname(fileURLToPath(import.meta.url));
+	const promptsDir = path.resolve(here, "bundled-prompts");
+	if (!fs.existsSync(promptsDir)) return [];
+
+	try {
+		const dosyalar = fs.readdirSync(promptsDir).filter((f) => f.endsWith(".md"));
+		const args: string[] = [];
+		for (const dosya of dosyalar) {
+			args.push("--prompt-template", path.join(promptsDir, dosya));
+		}
+		return args;
+	} catch {
+		return [];
 	}
 }
 
