@@ -11,12 +11,15 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import { main } from "@earendil-works/pi-coding-agent";
 import { printBanner } from "./banner.js";
+import bilgiKomutlariExtension from "./extensions/bilgi-komutlari.js";
+import dusunceExtension from "./extensions/dusunce.js";
+import turkceAliaslarExtension from "./extensions/turkce-aliaslar.js";
 import turkceKomutlarExtension from "./extensions/turkce-komutlar.js";
 import turkceModExtension from "./extensions/turkce-mod.js";
 import subagentExtension from "./subagent/index.js";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.2.0";
+const VERSION = "0.3.0";
 
 /**
  * Komut satırı argümanlarında yardım/versiyon istenmiş mi?
@@ -114,6 +117,9 @@ async function calistir(): Promise<void> {
 			extensionFactories: [
 				turkceModExtension,
 				turkceKomutlarExtension,
+				turkceAliaslarExtension,
+				dusunceExtension,
+				bilgiKomutlariExtension,
 				subagentExtension,
 			],
 		});

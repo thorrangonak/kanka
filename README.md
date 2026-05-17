@@ -95,31 +95,63 @@ Sonra konuş kanka'yla:
 
 ## Türkçe komutlar
 
-Oturum içinde slash komutları:
+Oturum içinde **35+ Türkçe slash komutu** kullanabilirsin:
 
-### Sistem komutları
+### 📁 Temel
 
-| Türkçe | İngilizce alias | Açıklama |
-|--------|----------------|----------|
-| `/yardım` | `/help` | Komut listesi |
-| `/çık` | `/exit` | Oturumdan çık |
-| `/temizle` | `/clear` | Ekranı temizle |
-| `/durum` | `/status` | Oturum durumu |
-| `/oturum` | `/sessions` | Oturumları listele |
-| `/yeni` | `/new` | Yeni oturum başlat |
-| `/selam` | — | kanka'dan bir selam |
+| Komut | Açıklama |
+|-------|----------|
+| `/yardım` | Bu yardım listesi |
+| `/çık` | Oturumdan çık |
+| `/bilgi` | Kanka durum özeti (versiyon + model + thinking + ekip) |
+| `/ekip` | Subagent ekibini listele |
+| `/araçlar` | Aktif tool listesi |
+| `/düşünce <seviye>` | Thinking level (kapat/min/düşük/orta/yüksek/max) |
+| `/selam` | kanka'dan bir selam |
 
-### Workflow komutları (chain pipeline)
+### 🔗 Workflow (chain pipeline)
 
 | Komut | Pipeline |
 |-------|----------|
-| `/yap` | kasif → planlayici → isci |
-| `/plan-yap` | kasif → planlayici |
-| `/yap-ve-incele` | isci → gozden-geciren → isci |
-| `/debug` | kasif → hata-avcisi |
-| `/refactor-incele` | kasif → refactorcu → gozden-geciren |
+| `/yap <görev>` | kasif → planlayici → isci |
+| `/plan-yap <görev>` | kasif → planlayici (sadece plan) |
+| `/yap-ve-incele <görev>` | isci → gozden-geciren → isci |
+| `/debug <bug>` | kasif → hata-avcisi |
+| `/refactor-incele <hedef>` | kasif → refactorcu → gozden-geciren |
 
-Pi'nin orijinal İngilizce komutları da çalışır.
+### 🗂️ Context yönetimi
+
+| Türkçe | Pi orijinal | Açıklama |
+|--------|-------------|----------|
+| `/sıkıştır` / `/özet` | `/compact` | Context'i compact et |
+| `/yenile` | `/reload` | Runtime'ı yeniden yükle |
+
+### 💾 Oturum yönetimi
+
+| Türkçe | Pi orijinal |
+|--------|-------------|
+| `/çatalla` | `/fork` |
+| `/klonla` | `/clone` |
+| `/devam` | `/resume` |
+| `/ağaç` | `/tree` |
+| `/isim` | `/name` |
+| `/içeal` | `/import` |
+| `/aktar` | `/export` |
+| `/paylaş` | `/share` |
+| `/kopyala` | `/copy` |
+
+### 🔐 Auth & ayarlar
+
+| Türkçe | Pi orijinal |
+|--------|-------------|
+| `/giriş` | `/login` |
+| `/çıkış` | `/logout` |
+| `/ayarlar` | `/settings` |
+| `/kısayollar` | `/hotkeys` |
+
+> Tüm Türkçe komutların **ASCII versiyonları** da var (`/sikistir`, `/cikis`, `/agac` vb.) — Cmd/PowerShell'de Türkçe karakter zor olursa kullan.
+>
+> Pi'nin orijinal İngilizce komutları da her zaman çalışır.
 
 ## CLI bayrakları
 
