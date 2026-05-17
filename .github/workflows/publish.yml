@@ -1,0 +1,53 @@
+name: Publish to npm
+
+# Yeni bir versiyon tag'i push edildiğinde otomatik npm publish yapar.
+# Örnek: git tag v0.4.0 && git push origin v0.4.0
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+  id-token: write # npm provenance için
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+
+      - name: Bağımlılıkları kur
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Versiyon kontrolü
+        run: |
+          PKG_VERSION=$(node -p "require('./package.json').version")
+          TAG_VERSION=${GITHUB_REF_NAME#v}
+          if [ "$PKG_VERSION" != "$TAG_VERSION" ]; then
+            echo "Hata: package.json versiyonu ($PKG_VERSION) tag versiyonuyla ($TAG_VERSION) eşleşmiyor"
+            exit 1
+          fi
+          echo "✓ Versiyon eşleşti: $PKG_VERSION"
+
+      - name: npm'e yayınla
+        run: npm publish --access public --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: GitHub Release oluştur
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          name: "kanka ${{ github.ref_name }}"
