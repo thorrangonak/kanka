@@ -1,0 +1,7 @@
+# package.json 'files' whitelist mantığıyla çalışıyor (dist + README + LICENSE).
+# Bu dosya ek güvenlik için — eğer 'files' kaldırılırsa LAUNCH paketin içine girmesin.
+LAUNCH/
+.github/
+*.log
+.env
+.env.local
