@@ -19,7 +19,7 @@ import turkceModExtension from "./extensions/turkce-mod.js";
 import subagentExtension from "./subagent/index.js";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.3.0";
+const VERSION = "0.3.1";
 
 /**
  * Komut satırı argümanlarında yardım/versiyon istenmiş mi?

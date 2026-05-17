@@ -1,108 +1,134 @@
 /**
  * Türkçe Slash Komut Alias Extension
  *
- * Pi'nin dahili slash komutlarına Türkçe alias'lar ekler.
- * Kullanıcı `/sıkıştır` yazınca otomatik olarak `/compact`'a dönüşür.
+ * İki kategoride alias sağlıyoruz:
  *
- * Yaklaşım: `input` event handler ile mesaj agent'a gitmeden önce text'i
- * transform ederiz. Bu sayede pi'nin dahili komut işleyicisi orijinal
- * komutu görür ve normal şekilde çalıştırır.
+ * 1. **Gerçek alias'lar (Tier 1)** — Extension API üzerinden direkt action çağrılır:
+ *      /sıkıştır, /özet → ctx.compact()
+ *      /yenile          → ctx.reload()
+ *      /yeni            → ctx.newSession()
+ *
+ * 2. **Yönlendirici alias'lar (Tier 2)** — Pi'nin TUI seviyesi komutlarına
+ *    extension API'den erişilemiyor (login, settings, fork, copy vb.). Bu komutlar
+ *    çağrılınca kullanıcıyı pi'nin orijinal komutuna yönlendiriyoruz.
+ *
+ * Not: Pi'nin slash komut parser'ı `emitInput`'tan ÖNCE çalıştığı için, sadece
+ * text transform yapan bir alias çalışmıyor — bu yüzden kanka kendi extension
+ * komutlarını `registerCommand` ile kayıt ediyor ve action'ları manuel tetikliyor.
  */
 
-import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+import type { ExtensionAPI, ExtensionCommandContext } from "@earendil-works/pi-coding-agent";
 
-interface SlashAlias {
-	/** Türkçe komut (slash'sız) */
+interface YonlendirmeAlias {
 	turkce: string;
-	/** Pi'nin orijinal komutu (slash'sız) */
-	pi: string;
-	/** Komut açıklaması (yardım için) */
+	piKomut: string;
 	aciklama: string;
 }
 
 /**
- * Türkçe → Pi alias eşleştirmeleri.
- * ASCII'siz Türkçe versiyonlar da eklendi (klavye kolaylığı).
+ * Pi'nin TUI seviyesi komutları — extension'dan tetiklenemez.
+ * Kullanıcıya orijinal komutu hatırlat.
  */
-export const SLASH_ALIASLAR: SlashAlias[] = [
-	// Context yönetimi
-	{ turkce: "sıkıştır", pi: "compact", aciklama: "Context'i compact et (özet çıkar, eskileri sıkıştır)" },
-	{ turkce: "sikistir", pi: "compact", aciklama: "Context'i compact et (ASCII)" },
-	{ turkce: "özet", pi: "compact", aciklama: "Context'i compact et (alias)" },
-	{ turkce: "ozet", pi: "compact", aciklama: "Context'i compact et (ASCII alias)" },
-
-	// Kopyala / aktar
-	{ turkce: "kopyala", pi: "copy", aciklama: "Son asistan mesajını panoya kopyala" },
-	{ turkce: "aktar", pi: "export", aciklama: "Oturumu HTML'e aktar" },
-	{ turkce: "dışaver", pi: "export", aciklama: "Oturumu HTML'e aktar (alias)" },
-	{ turkce: "disaver", pi: "export", aciklama: "Oturumu HTML'e aktar (ASCII)" },
-	{ turkce: "paylaş", pi: "share", aciklama: "Oturumu paylaş (gist link)" },
-	{ turkce: "paylas", pi: "share", aciklama: "Oturumu paylaş (ASCII)" },
-
-	// Oturum yönetimi
-	{ turkce: "çatalla", pi: "fork", aciklama: "Mevcut oturumu fork et (kopya)" },
-	{ turkce: "catalla", pi: "fork", aciklama: "Oturumu fork et (ASCII)" },
-	{ turkce: "klonla", pi: "clone", aciklama: "Oturumu klonla" },
-	{ turkce: "içeal", pi: "import", aciklama: "Oturum dosyası içe al" },
-	{ turkce: "iceal", pi: "import", aciklama: "Oturum dosyası içe al (ASCII)" },
-	{ turkce: "devam", pi: "resume", aciklama: "Bir oturumdan devam et" },
-	{ turkce: "ağaç", pi: "tree", aciklama: "Oturum ağacını göster (branch navigator)" },
-	{ turkce: "agac", pi: "tree", aciklama: "Oturum ağacı (ASCII)" },
-	{ turkce: "isim", pi: "name", aciklama: "Mevcut oturumu adlandır" },
-
-	// Auth
-	{ turkce: "giriş", pi: "login", aciklama: "Provider'a giriş yap (OAuth veya API key)" },
-	{ turkce: "giris", pi: "login", aciklama: "Provider'a giriş (ASCII)" },
-	{ turkce: "çıkış", pi: "logout", aciklama: "Provider'dan çıkış yap" },
-	{ turkce: "cikis", pi: "logout", aciklama: "Provider'dan çıkış (ASCII)" },
-
-	// Sistem
-	{ turkce: "ayarlar", pi: "settings", aciklama: "Ayarlar TUI'sini aç" },
-	{ turkce: "yenile", pi: "reload", aciklama: "Runtime'ı yeniden yükle (config + extension)" },
-	{ turkce: "kısayollar", pi: "hotkeys", aciklama: "Klavye kısayollarını göster" },
-	{ turkce: "kisayollar", pi: "hotkeys", aciklama: "Klavye kısayolları (ASCII)" },
-	{ turkce: "değişiklikler", pi: "changelog", aciklama: "Pi changelog'unu göster" },
-	{ turkce: "degisiklikler", pi: "changelog", aciklama: "Changelog (ASCII)" },
-	{ turkce: "hata-ayıkla", pi: "debug", aciklama: "Debug bilgisini göster" },
-	{ turkce: "hata-ayikla", pi: "debug", aciklama: "Debug bilgisi (ASCII)" },
+const YONLENDIRME_ALIASLARI: YonlendirmeAlias[] = [
+	{ turkce: "çatalla", piKomut: "/fork", aciklama: "Oturumu fork et" },
+	{ turkce: "catalla", piKomut: "/fork", aciklama: "Oturumu fork et" },
+	{ turkce: "klonla", piKomut: "/clone", aciklama: "Oturumu klonla" },
+	{ turkce: "devam", piKomut: "/resume", aciklama: "Bir oturumdan devam et" },
+	{ turkce: "ağaç", piKomut: "/tree", aciklama: "Oturum ağacını göster" },
+	{ turkce: "agac", piKomut: "/tree", aciklama: "Oturum ağacı" },
+	{ turkce: "isim", piKomut: "/name", aciklama: "Mevcut oturumu adlandır" },
+	{ turkce: "içeal", piKomut: "/import", aciklama: "Oturum dosyası içe al" },
+	{ turkce: "iceal", piKomut: "/import", aciklama: "Oturum içe al" },
+	{ turkce: "aktar", piKomut: "/export", aciklama: "Oturumu HTML'e aktar" },
+	{ turkce: "dışaver", piKomut: "/export", aciklama: "HTML'e aktar" },
+	{ turkce: "disaver", piKomut: "/export", aciklama: "HTML'e aktar" },
+	{ turkce: "paylaş", piKomut: "/share", aciklama: "Oturumu paylaş" },
+	{ turkce: "paylas", piKomut: "/share", aciklama: "Oturumu paylaş" },
+	{ turkce: "kopyala", piKomut: "/copy", aciklama: "Son asistan mesajını kopyala" },
+	{ turkce: "giriş", piKomut: "/login", aciklama: "Provider'a giriş yap" },
+	{ turkce: "giris", piKomut: "/login", aciklama: "Provider'a giriş" },
+	{ turkce: "çıkış", piKomut: "/logout", aciklama: "Provider'dan çıkış" },
+	{ turkce: "cikis", piKomut: "/logout", aciklama: "Provider'dan çıkış" },
+	{ turkce: "ayarlar", piKomut: "/settings", aciklama: "Ayarlar TUI'sini aç" },
+	{ turkce: "kısayollar", piKomut: "/hotkeys", aciklama: "Klavye kısayolları" },
+	{ turkce: "kisayollar", piKomut: "/hotkeys", aciklama: "Klavye kısayolları" },
+	{ turkce: "değişiklikler", piKomut: "/changelog", aciklama: "Pi changelog'u" },
+	{ turkce: "degisiklikler", piKomut: "/changelog", aciklama: "Pi changelog" },
+	{ turkce: "hata-ayıkla", piKomut: "/debug", aciklama: "Debug bilgisi" },
+	{ turkce: "hata-ayikla", piKomut: "/debug", aciklama: "Debug bilgisi" },
 ];
 
-/**
- * `/turkce` formatındaki bir komutu `/pi` formatına çevirir.
- * Eşleşme yoksa orijinal metni döner.
- */
-function aliasCevir(text: string): string | null {
-	if (!text.startsWith("/")) return null;
-
-	// Slash sonrası kısmı al
-	const slashSonrasi = text.slice(1);
-	// İlk boşluğa kadar = komut, sonrası = argüman
-	const bosluk = slashSonrasi.indexOf(" ");
-	const komut = bosluk === -1 ? slashSonrasi : slashSonrasi.slice(0, bosluk);
-	const argumanlar = bosluk === -1 ? "" : slashSonrasi.slice(bosluk);
-
-	// Alias bul (case-sensitive, çünkü Türkçe karakterler önemli)
-	const alias = SLASH_ALIASLAR.find((a) => a.turkce === komut);
-	if (!alias) return null;
-
-	return `/${alias.pi}${argumanlar}`;
-}
-
 export default function turkceAliaslarExtension(pi: ExtensionAPI) {
-	// Input event'i yakala — kullanıcı bir mesaj/komut girince çalışır.
-	// Sadece interactive kaynaklı input'lara müdahale et (RPC veya extension'dan
-	// gelen mesajları zaten programatik, dönüştürmeye gerek yok).
-	pi.on("input", async (event) => {
-		if (event.source !== "interactive") return;
+	// ───────────────────────────────────────────────
+	// TIER 1: Gerçek alias'lar (action API üzerinden)
+	// ───────────────────────────────────────────────
 
-		const yeniMetin = aliasCevir(event.text);
-		if (!yeniMetin) return;
+	const sikistirHandler = async (args: string, ctx: ExtensionCommandContext): Promise<void> => {
+		const ozelTalimat = args?.trim() || undefined;
+		ctx.ui.notify(
+			ozelTalimat
+				? `Context sıkıştırılıyor (özel talimat: "${ozelTalimat}")...`
+				: "Context sıkıştırılıyor...",
+			"info",
+		);
+		ctx.compact({ customInstructions: ozelTalimat });
+	};
 
-		// Komutu pi'nin orijinal versiyonuna transform et
-		return {
-			action: "transform" as const,
-			text: yeniMetin,
-			images: event.images,
-		};
+	pi.registerCommand("sıkıştır", {
+		description: "Context'i sıkıştır (compact). İsteğe bağlı: özel özet talimatı.",
+		handler: sikistirHandler,
 	});
+	pi.registerCommand("sikistir", {
+		description: "Context'i sıkıştır (ASCII)",
+		handler: sikistirHandler,
+	});
+	pi.registerCommand("özet", {
+		description: "Context'i sıkıştır (alias: /sıkıştır)",
+		handler: sikistirHandler,
+	});
+	pi.registerCommand("ozet", {
+		description: "Context'i sıkıştır (ASCII)",
+		handler: sikistirHandler,
+	});
+
+	pi.registerCommand("yenile", {
+		description: "Runtime'ı yeniden yükle (config + extension)",
+		handler: async (_args, ctx) => {
+			ctx.ui.notify("Runtime yeniden yükleniyor...", "info");
+			await ctx.reload();
+		},
+	});
+
+	pi.registerCommand("yeniden-yukle", {
+		description: "Runtime'ı yeniden yükle (ASCII alias)",
+		handler: async (_args, ctx) => {
+			ctx.ui.notify("Runtime yeniden yukleniyor...", "info");
+			await ctx.reload();
+		},
+	});
+
+	pi.registerCommand("yeni-oturum", {
+		description: "Yeni oturum başlat",
+		handler: async (_args, ctx) => {
+			ctx.ui.notify("Yeni oturum başlatılıyor...", "info");
+			await ctx.newSession();
+		},
+	});
+
+	// ───────────────────────────────────────────────
+	// TIER 2: Yönlendirici alias'lar
+	// (Pi TUI'sine erişim yok, kullanıcıyı orijinal komuta yönlendir)
+	// ───────────────────────────────────────────────
+
+	for (const alias of YONLENDIRME_ALIASLARI) {
+		pi.registerCommand(alias.turkce, {
+			description: `${alias.aciklama} (kanka: ${alias.piKomut} yaz)`,
+			handler: async (_args, ctx) => {
+				ctx.ui.notify(
+					`Bu komut için pi'nin yerel komutu lazım kanka:\n  ${alias.piKomut}\n\n(Pi TUI seviyesi komutlar extension'lardan tetiklenemiyor.\nYazıp Enter'a bas, aynı işi yapar.)`,
+					"info",
+				);
+			},
+		});
+	}
 }
