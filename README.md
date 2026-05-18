@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="assets/hero.svg" alt="kanka demo — 8 sahnelik canlı tanıtım" width="900">
+  <a href="https://kankam.ai">
+    <img src="assets/hero.svg" alt="kanka demo — 8 sahnelik canlı tanıtım · kankam.ai" width="900">
+  </a>
 </p>
 
 <p align="center">
@@ -10,6 +12,12 @@
   <strong>"Kanka, şunu yapsana."</strong>
 </p>
 <p align="center">
+  🌐 <a href="https://kankam.ai"><strong>kankam.ai</strong></a> &nbsp;·&nbsp;
+  📦 <a href="https://www.npmjs.com/package/@thorrangonak/kanka"><strong>npm</strong></a> &nbsp;·&nbsp;
+  💬 <a href="https://github.com/thorrangonak/kanka/discussions"><strong>Discussions</strong></a>
+</p>
+<p align="center">
+  <a href="https://kankam.ai"><img alt="website" src="https://img.shields.io/badge/site-kankam.ai-94e2d5?style=flat-square"></a>
   <a href="https://www.npmjs.com/package/@thorrangonak/kanka"><img alt="npm" src="https://img.shields.io/npm/v/@thorrangonak/kanka?style=flat-square"></a>
   <a href="https://www.npmjs.com/package/@thorrangonak/kanka"><img alt="downloads" src="https://img.shields.io/npm/dm/@thorrangonak/kanka?style=flat-square"></a>
   <a href="LICENSE"><img alt="license" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square"></a>
@@ -27,6 +35,8 @@
 $ kanka
 > Bana NextJS + Tailwind ile minimal bir landing page yap
 ```
+
+> 🌐 **Canlı tanıtım**: [kankam.ai](https://kankam.ai) — interaktif persona switcher, KVKK skill detayları, token tasarrufu benchmark'ları.
 
 ## ✨ 8 Ana Özellik
 
@@ -557,13 +567,32 @@ Daha fazlası: [TEST.md](TEST.md) — interaktif test kılavuzu.
 ## Yol haritası
 
 - **v0.4.0** ✅ Persona + Günlük + Terminal entegrasyonu + Update sistemi
-- **v0.5.0** (bu hafta): Daha fazla persona, KVKK skill, easter eggs, demo GIF, version sabit unification
-- **v0.6.0** (2 hafta): `/istatistik`, `/inceleme-modu`, `/onerim` (proje scan), GitHub Discussions
-- **v0.7.0** (1 ay): MCP entegrasyonu, **Trendyol-LLM native provider** 🇹🇷, tema sistemi (denizli, kapadokya, boğaz)
+- **v0.5.0** ✅ 3 yeni persona (akademisyen, stajyer, paranoyak), KVKK skill, easter eggs, `/istatistik`, version sync
+- **v0.5.1** ✅ Resmi tanıtım sitesi yayında → [kankam.ai](https://kankam.ai)
+- **v0.6.0** (planlanmakta): `/inceleme-modu`, `/onerim` (proje scan), tema sistemi, test suite
+- **v0.7.0** (uzun vadeli): MCP entegrasyonu, daha fazla Türkçe skill (e-fatura, iyzico, e-Devlet OAuth)
+
+Detaylı yol haritası: [ROADMAP.md](ROADMAP.md)
 
 ## Katkı
 
 Issue/PR memnuniyetle. Türkçe katkılar **özellikle** memnuniyetle — README hatası, persona önerisi, skill ekleme.
+
+3 "good first issue" hazır:
+- [#1 `memur` personası ekle](https://github.com/thorrangonak/kanka/issues/1)
+- [#2 `iban-validate` skill yaz](https://github.com/thorrangonak/kanka/issues/2)
+- [#3 `/şaka` listesine yeni şakalar ekle](https://github.com/thorrangonak/kanka/issues/3)
+
+Detay: [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## Linkler
+
+- 🌐 **Resmi site**: [kankam.ai](https://kankam.ai)
+- 📦 **npm**: [@thorrangonak/kanka](https://www.npmjs.com/package/@thorrangonak/kanka)
+- 🐙 **GitHub**: [thorrangonak/kanka](https://github.com/thorrangonak/kanka)
+- 💬 **Discussions**: [topluluk sohbeti](https://github.com/thorrangonak/kanka/discussions)
+- 📝 **Issues**: [bug & feature](https://github.com/thorrangonak/kanka/issues)
+- 🔗 **Sürümler**: [GitHub Releases](https://github.com/thorrangonak/kanka/releases)
 
 ## Lisans
 

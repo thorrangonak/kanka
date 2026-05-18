@@ -1,6 +1,6 @@
 {
   "name": "@thorrangonak/kanka",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "kanka — Türkçe konuşan terminal kodlama asistanı. 'Kanka, şunu yapsana.'",
   "type": "module",
   "bin": {
@@ -58,7 +58,7 @@
     "type": "git",
     "url": "git+https://github.com/thorrangonak/kanka.git"
   },
-  "homepage": "https://github.com/thorrangonak/kanka",
+  "homepage": "https://kankam.ai",
   "bugs": {
     "url": "https://github.com/thorrangonak/kanka/issues"
   },

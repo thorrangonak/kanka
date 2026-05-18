@@ -3,7 +3,7 @@
 // Build sırasında otomatik güncellenir.
 
 /** Kanka'nın mevcut versiyonu (package.json'dan senkronize). */
-export const KANKA_VERSION = "0.5.0";
+export const KANKA_VERSION = "0.5.1";
 
 /** npm paket adı (registry'de yayınlandığı isim). */
 export const PAKET_ADI = "@thorrangonak/kanka";
