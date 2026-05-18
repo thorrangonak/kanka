@@ -24,12 +24,12 @@ import * as os from "node:os";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+import { KANKA_VERSION, PAKET_ADI } from "../version.js";
 
 const execFileAsync = promisify(execFile);
 
 const KANKA_DIR = path.join(os.homedir(), ".kanka");
 const CACHE_DOSYA = path.join(KANKA_DIR, "son-versiyon-kontrol");
-const PAKET_ADI = "@thorrangonak/kanka";
 
 /**
  * Günde bir kere kontrol et (24h cache).
@@ -48,11 +48,8 @@ interface VersiyonCache {
 	guncelMi: boolean;
 }
 
-/**
- * package.json'dan mevcut versiyonu oku.
- * cli.ts'deki sabit hardcoded ile aynı olmalı.
- */
-const MEVCUT_VERSIYON = "0.4.1";
+/** Mevcut versiyon — version.ts'ten gelir, package.json ile senkron. */
+const MEVCUT_VERSIYON = KANKA_VERSION;
 
 /**
  * Semver karşılaştırma — a < b ise -1, a > b ise 1, eşit ise 0.

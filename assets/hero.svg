@@ -599,7 +599,7 @@
   <circle cx="42" cy="22" r="6" fill="#E6BF29"/>
   <circle cx="62" cy="22" r="6" fill="#52C12B"/>
 
-  <text x="860" y="27" fill="#7f849c" font-size="12" text-anchor="end">kanka v0.4.0  ·  github.com/thorrangonak/kanka</text>
+  <text x="860" y="27" fill="#7f849c" font-size="12" text-anchor="end">kanka v0.5.0  ·  github.com/thorrangonak/kanka</text>
 
   <g class="scene-1"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🎭 Aynı soru, farklı kişilik — anında değişir</text><text x="40" y="100" fill="#a6e3a1" font-size="15" font-weight="bold">$ kanka</text><text x="40" y="122" fill="#f9e2af" font-size="15">&gt; Bir fonksiyon nasıl yazılır?</text><g style="animation: p1-0 48s infinite; opacity:0;">
             <text x="40" y="165" fill="#94e2d5" font-size="15" font-weight="bold">Aktif kişilik: 🤝 kanka</text>
@@ -639,12 +639,12 @@
         <text x="560" y="430" fill="#f9e2af" font-size="15" font-weight="bold">🔔 kanka</text>
         <text x="560" y="455" fill="#cdd6f4" font-size="15">cevabım hazır (32s)</text>
     </g></g>
-  <g class="scene-4"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔄 Otomatik güncelleme bildirimi — hep güncel kal</text><text x="40" y="110" fill="#cba6f7" font-size="15" font-weight="bold">  ╦╔═╔═╗╔╗╔╦╔═╔═╗</text><text x="40" y="132" fill="#cba6f7" font-size="15" font-weight="bold">  ╠╩╗╠═╣║║║╠╩╗╠═╣</text><text x="40" y="154" fill="#cba6f7" font-size="15" font-weight="bold">  ╩ ╩╩ ╩╝╚╝╩ ╩╩ ╩</text><text x="40" y="181" fill="#cdd6f4" font-size="15">kanka v0.4.0  ·  Türkçe konuşan terminal kodlama asistanı</text><text x="40" y="203" fill="#7f849c" font-size="13">/yardım komutlar  ·  /ekip subagent'lar  ·  /bilgi durum</text><g style="animation: notice-4 48s infinite; opacity:0;"><text x="40" y="235" fill="#f9e2af" font-size="15" font-weight="bold">📦 Yeni sürüm var: 0.4.0 → 0.5.0  ·  Güncellemek için: /güncelle</text></g><g style="animation: cmd-4 48s infinite; opacity:0;">
+  <g class="scene-4"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔄 Otomatik güncelleme bildirimi — hep güncel kal</text><text x="40" y="110" fill="#cba6f7" font-size="15" font-weight="bold">  ╦╔═╔═╗╔╗╔╦╔═╔═╗</text><text x="40" y="132" fill="#cba6f7" font-size="15" font-weight="bold">  ╠╩╗╠═╣║║║╠╩╗╠═╣</text><text x="40" y="154" fill="#cba6f7" font-size="15" font-weight="bold">  ╩ ╩╩ ╩╝╚╝╩ ╩╩ ╩</text><text x="40" y="181" fill="#cdd6f4" font-size="15">kanka v0.5.0  ·  Türkçe konuşan terminal kodlama asistanı</text><text x="40" y="203" fill="#7f849c" font-size="13">/yardım komutlar  ·  /ekip subagent'lar  ·  /bilgi durum</text><g style="animation: notice-4 48s infinite; opacity:0;"><text x="40" y="235" fill="#f9e2af" font-size="15" font-weight="bold">📦 Yeni sürüm var: 0.5.0 → 0.6.0  ·  Güncellemek için: /güncelle</text></g><g style="animation: cmd-4 48s infinite; opacity:0;">
         <text x="40" y="272" fill="#a6e3a1" font-size="15" font-weight="bold">$ kanka update</text>
         <text x="40" y="294" fill="#89b4fa" font-size="15">📡 npm registry kontrol ediliyor...</text>
-        <text x="40" y="316" fill="#f9e2af" font-size="15">📦 Yeni sürüm var: 0.4.0 → 0.5.0</text>
-        <text x="40" y="338" fill="#7f849c" font-size="15">📥 npm install -g @thorrangonak/kanka@0.5.0...</text>
-        <text x="40" y="360" fill="#a6e3a1" font-size="15" font-weight="bold">✓ Tamamdır kanka! kanka@0.5.0 yüklendi.</text>
+        <text x="40" y="316" fill="#f9e2af" font-size="15">📦 Yeni sürüm var: 0.5.0 → 0.6.0</text>
+        <text x="40" y="338" fill="#7f849c" font-size="15">📥 npm install -g @thorrangonak/kanka@0.6.0...</text>
+        <text x="40" y="360" fill="#a6e3a1" font-size="15" font-weight="bold">✓ Tamamdır kanka! kanka@0.6.0 yüklendi.</text>
     </g></g>
   <g class="scene-5"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🤝 9 uzman subagent ekibi — hepsi Türkçe konuşur</text><text x="40" y="92" fill="#7f849c" font-size="13">Her agent izole context'te çalışır, kendi uzmanlık alanında özelleşmiştir.</text><g style="animation: agent-0 48s infinite; opacity:0;">
             <rect x="40" y="125" width="260" height="75" rx="8" fill="#313244" stroke="#94e2d5" stroke-width="1.5" opacity="0.9"/>

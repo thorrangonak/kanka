@@ -14,6 +14,9 @@ export { default as windowsTerminalExtension } from "./extensions/windows-termin
 export { default as gunlukExtension } from "./extensions/gunluk.js";
 export { default as bundledSkillYukleyiciExtension } from "./extensions/bundled-skill-yukleyici.js";
 export { default as guncelleExtension, guncellemeUyariVar } from "./extensions/guncelle.js";
+export { default as easterEggsExtension } from "./extensions/easter-eggs.js";
+export { default as istatistikExtension } from "./extensions/istatistik.js";
+export { KANKA_VERSION, PAKET_ADI } from "./version.js";
 
 // Pi'nin temel SDK'sını da yeniden export et (kullanıcı kendi entegrasyonu için).
 export {

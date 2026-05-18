@@ -9,8 +9,7 @@
 
 import type { ExtensionAPI, Theme } from "@earendil-works/pi-coding-agent";
 import { guncellemeUyariVar } from "./guncelle.js";
-
-const KANKA_VERSION = "0.4.1";
+import { KANKA_VERSION } from "../version.js";
 
 function getKankaHeader(theme: Theme): string[] {
 	// ASCII art "kanka" — küçük ve şık

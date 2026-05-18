@@ -16,8 +16,10 @@ import { promisify } from "node:util";
 import bilgiKomutlariExtension from "./extensions/bilgi-komutlari.js";
 import bundledSkillYukleyiciExtension from "./extensions/bundled-skill-yukleyici.js";
 import dusunceExtension from "./extensions/dusunce.js";
+import easterEggsExtension from "./extensions/easter-eggs.js";
 import guncelleExtension from "./extensions/guncelle.js";
 import gunlukExtension from "./extensions/gunluk.js";
+import istatistikExtension from "./extensions/istatistik.js";
 import kankaHeaderExtension from "./extensions/kanka-header.js";
 import kisilikExtension from "./extensions/kisilik.js";
 import turkceAliaslarExtension from "./extensions/turkce-aliaslar.js";
@@ -27,10 +29,9 @@ import windowsTerminalExtension from "./extensions/windows-terminal.js";
 import subagentExtension from "./subagent/index.js";
 
 const execFileAsync = promisify(execFile);
-const PAKET_ADI = "@thorrangonak/kanka";
 
-// package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.4.1";
+// Versiyon src/version.ts'ten gelir (build sırasında package.json'dan auto-generate edilir)
+import { KANKA_VERSION as VERSION, PAKET_ADI } from "./version.js";
 
 /**
  * `kanka update` veya `kanka update --check` subcommand'ı mı?
@@ -215,6 +216,14 @@ GÜNCELLEME
   Devre dışı: KANKA_NO_UPDATE_CHECK=1 (kontrol kapanır)
                 KANKA_NO_UPDATE_PROMPT=1 (header'da uyarı görünmez)
 
+İSTATİSTİK & EĞLENCE (v0.5 🆕)
+  /istatistik        Lokal kullanım özeti (günlük + persona + session)
+  /şaka             Yazılım şakası
+  /atasözü           Dev versiyonu Türk atasözü
+  /kahve             Kahve molası + ASCII art
+  /övgü              Motivasyon mesajı
+  /eğlence           Tüm eğlenceli komutlar
+
 TERMİNAL ENTEGRASYONU
   /tab-title <metin> Manuel tab title (test)
   /bildir <metin>    Test bildirimi (OSC 9)
@@ -304,6 +313,8 @@ async function calistir(): Promise<void> {
 				kisilikExtension,
 				windowsTerminalExtension,
 				gunlukExtension,
+				istatistikExtension,
+				easterEggsExtension,
 				bundledSkillYukleyiciExtension,
 				subagentExtension,
 			],

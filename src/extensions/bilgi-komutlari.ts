@@ -11,13 +11,12 @@ import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
 import { parseFrontmatter } from "@earendil-works/pi-coding-agent";
+import { KANKA_VERSION } from "../version.js";
 
 interface BundledAgentBilgi {
 	name: string;
 	description: string;
 }
-
-const KANKA_VERSION = "0.4.1";
 
 /**
  * Paket içindeki bundled-agents/ klasöründen agent meta bilgisini okur.

@@ -293,7 +293,7 @@ def scene4():
         y += LINE_H
 
     y += 5
-    elems.append(t(40, y, "kanka v0.4.0  ·  Türkçe konuşan terminal kodlama asistanı", fill=FG))
+    elems.append(t(40, y, "kanka v0.5.0  ·  Türkçe konuşan terminal kodlama asistanı", fill=FG))
     y += LINE_H
     elems.append(t(40, y, "/yardım komutlar  ·  /ekip subagent'lar  ·  /bilgi durum", fill=DIM, size=13))
     y += LINE_H + 10
@@ -301,7 +301,7 @@ def scene4():
     keyframes = []
     # Notice — sahne 4'ün %25'inde belirir
     keyframes.append(sub_keyframe("notice-4", 0.25, 3))
-    elems.append(f'<g style="animation: notice-4 {TOTAL}s infinite; opacity:0;">{t(40, y, "📦 Yeni sürüm var: 0.4.0 → 0.5.0  ·  Güncellemek için: /güncelle", fill=YELLOW, weight="bold")}</g>')
+    elems.append(f'<g style="animation: notice-4 {TOTAL}s infinite; opacity:0;">{t(40, y, "📦 Yeni sürüm var: 0.5.0 → 0.6.0  ·  Güncellemek için: /güncelle", fill=YELLOW, weight="bold")}</g>')
     y += LINE_H + 15
 
     # Komut bloğu — %55
@@ -309,9 +309,9 @@ def scene4():
     elems.append(f'''<g style="animation: cmd-4 {TOTAL}s infinite; opacity:0;">
         {t(40, y, "$ kanka update", fill=GREEN, weight="bold")}
         {t(40, y + LINE_H, "📡 npm registry kontrol ediliyor...", fill=BLUE)}
-        {t(40, y + LINE_H * 2, "📦 Yeni sürüm var: 0.4.0 → 0.5.0", fill=YELLOW)}
-        {t(40, y + LINE_H * 3, "📥 npm install -g @thorrangonak/kanka@0.5.0...", fill=DIM)}
-        {t(40, y + LINE_H * 4, "✓ Tamamdır kanka! kanka@0.5.0 yüklendi.", fill=GREEN, weight="bold")}
+        {t(40, y + LINE_H * 2, "📦 Yeni sürüm var: 0.5.0 → 0.6.0", fill=YELLOW)}
+        {t(40, y + LINE_H * 3, "📥 npm install -g @thorrangonak/kanka@0.6.0...", fill=DIM)}
+        {t(40, y + LINE_H * 4, "✓ Tamamdır kanka! kanka@0.6.0 yüklendi.", fill=GREEN, weight="bold")}
     </g>''')
 
     return "\n".join(keyframes), f'<g class="scene-4">{"".join(elems)}</g>'
@@ -649,7 +649,7 @@ def build():
   <circle cx="42" cy="22" r="6" fill="#E6BF29"/>
   <circle cx="62" cy="22" r="6" fill="#52C12B"/>
 
-  <text x="{W - 40}" y="27" fill="{DIM}" font-size="12" text-anchor="end">kanka v0.4.0  ·  github.com/thorrangonak/kanka</text>
+  <text x="{W - 40}" y="27" fill="{DIM}" font-size="12" text-anchor="end">kanka v0.5.0  ·  github.com/thorrangonak/kanka</text>
 
   {s1_g}
   {s2_g}
