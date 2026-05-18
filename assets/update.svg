@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="618.45" height="401.17" xmlns="http://www.w3.org/2000/svg">
+<rect width="578.45" height="361.17" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="13.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="83.20px" xml:space="preserve">$ kanka
+</text><text x="50.00px" y="101.40px" xml:space="preserve">
+</text><text x="50.00px" y="119.60px" xml:space="preserve">  ╦╔═╔═╗╔╗╔╦╔═╔═╗
+</text><text x="50.00px" y="137.80px" xml:space="preserve">  ╠╩╗╠═╣║║║╠╩╗╠═╣
+</text><text x="50.00px" y="156.00px" xml:space="preserve">  ╩ ╩╩ ╩╝╚╝╩ ╩╩ ╩
+</text><text x="50.00px" y="174.20px" xml:space="preserve">
+</text><text x="50.00px" y="192.40px" xml:space="preserve">  kanka v0.4.1  ·  Türkçe konuşan terminal kodlama asistanı
+</text><text x="50.00px" y="210.60px" xml:space="preserve">  /yardım komutlar  ·  /ekip subagent&apos;lar  ·  /bilgi durum
+</text><text x="50.00px" y="228.80px" xml:space="preserve">
+</text><text x="50.00px" y="247.00px" xml:space="preserve">  📦 Yeni sürüm var: 0.4.1 → 0.5.0  ·  Güncellemek için: /güncelle
+</text><text x="50.00px" y="265.20px" xml:space="preserve">
+</text><text x="50.00px" y="283.40px" xml:space="preserve">&gt; /güncelle
+</text><text x="50.00px" y="301.60px" xml:space="preserve">📡 npm registry kontrol ediliyor...
+</text><text x="50.00px" y="319.80px" xml:space="preserve">📦 Yeni sürüm: 0.4.1 → 0.5.0
+</text><text x="50.00px" y="338.00px" xml:space="preserve">✓ Tamamdır kanka! kanka@0.5.0 yüklendi.
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>

@@ -1,76 +1,92 @@
-# Launch Materyalleri
+# 📢 Launch Materyalleri
 
-Bu klasör kanka'nın **lansman içeriklerini** barındırır. Repo'da kalır ama paket dağıtımına dahil değildir (`.npmignore` veya `files` listesi).
+Kanka v0.5.0 launch için hazırlanmış post taslakları.
 
-## İçerik
+## 📂 Dosyalar
 
-| Dosya | Hedef platform | Dil |
-|-------|----------------|-----|
-| `twitter-thread-tr.md` | Twitter/X | TR |
-| `medium-tr.md` | Medium | TR |
-| `dev-to-en.md` | dev.to | EN |
-| `hn-show.md` | Hacker News | EN |
-| `demo-script.md` | Video/GIF kaydı için senaryo | TR/EN |
+| Dosya | Platform | Dil | Uzunluk |
+|-------|----------|-----|---------|
+| [`devto-tr.md`](devto-tr.md) | DEV.to | Türkçe | ~12 KB |
+| [`devto-en.md`](devto-en.md) | DEV.to | İngilizce | ~14 KB |
+| [`twitter-thread.md`](twitter-thread.md) | Twitter/X | TR + EN | ~4 KB |
+| [`reddit-hn.md`](reddit-hn.md) | Reddit + HN + LinkedIn | TR + EN | ~10 KB |
 
-## Lansman Sırası (önerilen)
+## 🗓️ Önerilen launch takvimi
 
-### Faz 1: Hazırlık (1 gün)
-1. ✅ Repo + npm paket yayında (DONE)
-2. ⏳ Demo GIF veya 60-90 sn video kaydı (`demo-script.md`)
-3. ⏳ README'ye demo embed (GitHub'da görünür olsun)
-4. ⏳ İsteğe bağlı: `kanka.dev` veya `kanka.com.tr` landing page
+```
+Gün 1 (Pazartesi/Salı sabahı): r/Turkey + r/yazilim post
+Gün 2: DEV.to TR + EN simultaneous publish (canonical_url ile)
+Gün 3: r/programming + HackerNews "Show HN"
+Gün 4: Twitter/X thread (Salı/Çarşamba 14:00 TR)
+Gün 5: LinkedIn post (sabah 09:00) + kişisel network DM'leri
+```
 
-### Faz 2: Yumuşak çıkış (1 gün)
-5. **Twitter thread'i yayınla** (TR) — `twitter-thread-tr.md`
-6. Birkaç saat sonra Medium yazısını yayınla → Twitter'da link paylaş
-7. Türk dev community'lerine (Discord, Telegram, Reddit r/Turkey/programming) duyur
+## 📊 Tracking metric'leri
 
-### Faz 3: Uluslararası (1-3 gün sonra)
-8. dev.to yazısını yayınla (EN) — `dev-to-en.md`
-9. dev.to'da hashtags: #ai #cli #typescript #opensource #devtools
-10. dev.to yazısı yayınlandıktan birkaç saat sonra HN'a "Show HN" submit et — `hn-show.md`
-11. HN best practice: en iyi zaman pazartesi-perşembe sabah 9-11 ET (TR saatiyle 17-19)
+Launch sonrası 7 gün takip et:
 
-### Faz 4: Takip (sürekli)
-12. Geri bildirimleri Issue olarak topla
-13. Erken kullanıcıları (≤50) bizzat ilgilen — Discord/Twitter DM
-14. v0.3.2/0.4.0 hızlı patch'lerle ivmeyi koru
+- **npm**: Daily downloads (npmjs.com/package/@thorrangonak/kanka)
+- **GitHub**: Stars, fork, issue, PR
+- **Reddit**: Upvotes, yorum sayısı, controversial flag
+- **HackerNews**: Score (genelde 3-5 saat sonra zirve), yorum sayısı
+- **DEV.to**: Views, reactions, follows, comments
+- **Twitter**: Impressions, retweets, replies
+- **LinkedIn**: Views, reactions, comments
 
-## Hashtag stratejisi
+## 🎯 Hedefler
 
-### Twitter/X
-- 🇹🇷 `#TürkçeKodlama` `#YazılımcılaraSelam`
-- 🌍 `#AICoding` `#OpenSource` `#OpenTerminal`
-- 🛠️ `#TypeScript` `#NodeJS` `#CLI`
+**Hafta 1**:
+- npm install: 100+
+- GitHub stars: 50+
+- HN frontpage 1 saat (top 30)
+- 5+ issue/discussion
 
-### dev.to
-- `#opensource` (büyük topluluk)
-- `#ai` (trend)
-- `#typescript`
-- `#devtools`
-- `#showdev`
+**Ay 1**:
+- npm install: 1000+
+- GitHub stars: 200+
+- 3+ PR merge (community katkı)
+- 1+ persona/skill PR (community)
 
-## Reklam değil, hikaye
+## ⚠️ Ön kontroller (launch öncesi yap)
 
-Lansman'ın **özü**: "Pi gibi minimal, hackable bir araç üzerine kendi marka tool'umu nasıl 2 saatte kurdum?" — bu **HN/dev.to** için altın değerinde. Pure tanıtım değil, "I learned this, here's the pattern" yazısı.
+- [ ] README hero SVG GitHub'da animasyon olarak görünüyor mu?
+- [ ] `kanka --versiyon` → v0.5.0
+- [ ] `npm install -g @thorrangonak/kanka` temiz çalışıyor mu?
+- [ ] `/güncelle` test edildi mi?
+- [ ] CONTRIBUTING.md / ROADMAP.md linkleri çalışıyor mu?
+- [ ] 3 "good first issue" açık ve etiketli mi?
+- [ ] GitHub Discussions açık mı?
+- [ ] Demo screenshot/GIF hazır mı?
+- [ ] Anthropic OAuth flow lokal test edildi mi?
 
-Twitter ve Medium'da daha romantik: "kendi dilimde konuşan asistan istedim, yaptım" hikayesi.
+## 💬 Yanıt şablonları
 
-## Geri bildirim takibi
+**"Pi'den farkı ne?"**
+> Pi-coding-agent harika bir SDK ama İngilizce-first. Kanka onun üstüne Türkçe brand, 7 hazır persona, KVKK skill, Windows Terminal entegrasyonu ve domain-spesifik extension'lar ekliyor. Pi'ye 100% credit, kanka onun "Türkçe paketi".
 
-- Twitter mention'ları
-- GitHub Issues
-- dev.to comments
-- HN comments (eğer Show HN front page'e çıkarsa)
-- npm install istatistikleri ([npmtrends.com](https://npmtrends.com/@thorrangonak/kanka))
+**"Why do we need a Turkish-specific agent?"**
+> Localization isn't just translation. Persona tone changes output (abi → 50 lines, hoca → 200 lines). KVKK compliance has Turkey-specific rules that GDPR doesn't (different breach notification timeline). Windows Terminal is heavy in Turkish enterprise. These aren't gaps you can plug with a translation layer.
 
-İlk hafta hedef:
-- ⭐ 50+ GitHub star
-- 📥 200+ npm install
-- 🐛 5+ issue (gerçek kullanıcılar)
-- 🍴 3+ fork (community ilgi göstergesi)
+**"Bu open source mu?"**
+> Evet, MIT lisanslı. github.com/thorrangonak/kanka. Persona ve skill katkıları için sadece markdown bilmek yeterli — TypeScript şart değil.
 
-İkinci hafta:
-- v0.4 ile yeni özellik
-- İlk topluluk PR'ı
-- En az 1 contributor (sen değil)
+**"Bedava mı?"**
+> Paket ücretsiz, MIT lisans. LLM kullanımı için API key/abonelik gerek. Claude Pro/Max OAuth varsa marginal cost = $0 (abonelik kapsamında).
+
+**"Windows-only mu?"**
+> Hayır, macOS/Linux'ta da çalışır. Sadece Windows Terminal entegrasyonu öne çıkıyor çünkü diğer agent'lar bu konuda zayıf. iTerm2 ve WezTerm de OSC desteklediği için onlar da çalışır.
+
+**"How does it compare to Aider/Cursor/Claude Code?"**
+> Different niches:
+> - **Cursor**: GUI/IDE-first, freemium SaaS, English-only
+> - **Claude Code**: Anthropic-only, English-only, terminal-first
+> - **Aider**: Git-first, English-only, terminal-first
+> - **kanka**: Turkish-first (personas, KVKK, Türkçe komutlar), multi-LLM, terminal-first, MIT
+>
+> Different goals. Kanka isn't trying to replace them, it's filling a localization gap.
+
+## 🚀 Hadi başlayalım!
+
+Hazır olduğunda, ilk r/Turkey post'undan başla. Sonuçları topla, ikinci güne karar ver.
+
+İyi launch'lar kanka! 🎉

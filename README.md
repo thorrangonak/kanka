@@ -47,7 +47,9 @@ Kanka sıradan bir Türkçe wrapper değil — Pi-coding-agent SDK'sının tam g
 
 ## 1. 🎭 Persona sistemi
 
-Aynı soru, farklı ton. Kanka 4 hazır kişilikle gelir — sistem prompt'a dinamik olarak enjekte edilir, **her cevapta etkili olur**.
+<p align="center"><img src="assets/kisilik.svg" alt="Persona kataloğu" width="700"></p>
+
+Aynı soru, farklı ton. Kanka 7 hazır kişilikle gelir — sistem prompt'a dinamik olarak enjekte edilir, **her cevapta etkili olur**.
 
 | Kişilik | Stil | Ne zaman? |
 |---------|------|-----------|
@@ -87,6 +89,8 @@ emoji: 🔒
 
 ## 2. 📓 Geliştirme günlüğü
 
+<p align="center"><img src="assets/gunluk.svg" alt="Günlük örneği" width="700"></p>
+
 Proje bazlı **append-only günlük** — kararlar, bug fix'ler, deployment notları, ne öğrendin. Tag desteği ile, anında arama. Dosya: `~/.kanka/gunlukler/<proje>.jsonl`
 
 ```bash
@@ -115,6 +119,8 @@ Proje bazlı **append-only günlük** — kararlar, bug fix'ler, deployment notl
 ---
 
 ## 3. 🔔 Windows Terminal entegrasyonu
+
+<p align="center"><img src="assets/terminal.svg" alt="Windows Terminal entegrasyonu" width="700"></p>
 
 Çoğu coding agent macOS/Linux odaklı — kanka Windows kullanıcılarını birinci sınıf vatandaş olarak görür.
 
@@ -152,6 +158,8 @@ Sen başka pencereye bakıyorsan haberdar olursun. **Multi-tasking için ideal**
 ---
 
 ## 4. 🔄 Otomatik güncelleme
+
+<p align="center"><img src="assets/update.svg" alt="Update sistemi" width="700"></p>
 
 Kanka günde 1 kere npm registry'ye bakar, yeni sürüm varsa header'da bildirim gösterir. Update sistemi **3 katmanlı**:
 
@@ -193,6 +201,8 @@ KANKA_NO_UPDATE_PROMPT=1     # Header'da bildirim görünmez
 
 ## 5. 🤝 9 uzman subagent ekibi
 
+<p align="center"><img src="assets/ekip.svg" alt="Subagent ekibi + workflow komutları" width="700"></p>
+
 Kanka 9 uzman agent'la birlikte gelir. **Her biri izole context'te** çalışır (ana sohbetin bağlamından izole), kendi uzmanlık alanında özelleşmiştir, **Türkçe rapor** verir.
 
 | Agent | Görevi | Tipik kullanım |
@@ -214,6 +224,8 @@ Kanka 9 uzman agent'la birlikte gelir. **Her biri izole context'te** çalışır
 ---
 
 ## 6. 🔗 Chain + paralel async
+
+<p align="center"><img src="assets/chain.svg" alt="Chain pipeline + paralel async" width="700"></p>
 
 İki güçlü mod:
 
@@ -270,6 +282,8 @@ await delege({
 
 ## 7. 💰 Token tasarrufu (60-80%)
 
+<p align="center"><img src="assets/token.svg" alt="Token tasarrufu karşılaştırma" width="700"></p>
+
 **3 katmanlı optimizasyon** kanka'yı çıplak LLM kullanımına göre çok ucuza getirir:
 
 ### a) Prompt Cache (~70% tasarruf)
@@ -325,6 +339,8 @@ Token sayma derdi yok — aylık abonelik kapsamında.
 ---
 
 ## 8. 🔌 10+ LLM provider
+
+<p align="center"><img src="assets/multi-llm.svg" alt="10+ LLM provider" width="700"></p>
 
 Tek paket, **istediğin LLM**. API key koy, kullan. Pi-coding-agent'ın provider sisteminden faydalanır — kanka sadece Türkçe ambalaj.
 

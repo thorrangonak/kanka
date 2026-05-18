@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="557.14" height="496.00" xmlns="http://www.w3.org/2000/svg">
+<rect width="517.14" height="456.00" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="12.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="81.80px" xml:space="preserve">🔌 10+ LLM Provider — tek paket
+</text><text x="50.00px" y="98.60px" xml:space="preserve">
+</text><text x="50.00px" y="115.40px" xml:space="preserve">┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+</text><text x="50.00px" y="132.20px" xml:space="preserve">│  Claude     │ │  GPT        │ │  Gemini     │ │  GLM        │
+</text><text x="50.00px" y="149.00px" xml:space="preserve">│  Anthropic  │ │  OpenAI     │ │  Google     │ │  Z.AI       │
+</text><text x="50.00px" y="165.80px" xml:space="preserve">│  Opus 4.7   │ │  GPT-5 / o4 │ │  2.5 Pro    │ │  GLM-5.1    │
+</text><text x="50.00px" y="182.60px" xml:space="preserve">└─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
+</text><text x="50.00px" y="199.40px" xml:space="preserve">┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
+</text><text x="50.00px" y="216.20px" xml:space="preserve">│  Grok       │ │  Llama      │ │  DeepSeek   │ │  Ollama     │
+</text><text x="50.00px" y="233.00px" xml:space="preserve">│  xAI        │ │  Meta/lokal │ │  V3 / R1    │ │  Lokal      │
+</text><text x="50.00px" y="249.80px" xml:space="preserve">└─────────────┘ └─────────────┘ └─────────────┘ └─────────────┘
+</text><text x="50.00px" y="266.60px" xml:space="preserve">
+</text><text x="50.00px" y="283.40px" xml:space="preserve">$ kanka
+</text><text x="50.00px" y="300.20px" xml:space="preserve">&gt; /giriş      # provider listesi açılır
+</text><text x="50.00px" y="317.00px" xml:space="preserve">&gt; /model      # canlı model değiştir (Ctrl+P cycle)
+</text><text x="50.00px" y="333.80px" xml:space="preserve">
+</text><text x="50.00px" y="350.60px" xml:space="preserve"># Veya .env&apos;e koy, kanka otomatik bulur:
+</text><text x="50.00px" y="367.40px" xml:space="preserve">ANTHROPIC_API_KEY=sk-ant-...
+</text><text x="50.00px" y="384.20px" xml:space="preserve">OPENAI_API_KEY=sk-proj-...
+</text><text x="50.00px" y="401.00px" xml:space="preserve">GEMINI_API_KEY=AIza...
+</text><text x="50.00px" y="417.80px" xml:space="preserve">
+</text><text x="50.00px" y="434.60px" xml:space="preserve">✨ OAuth: Claude Pro/Max ile $0 marginal cost
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>

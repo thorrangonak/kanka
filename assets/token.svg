@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="680.36" height="383.83" xmlns="http://www.w3.org/2000/svg">
+<rect width="640.36" height="343.83" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="13.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="83.20px" xml:space="preserve">💰 5 dosyalık refactor projesi — token karşılaştırması
+</text><text x="50.00px" y="101.40px" xml:space="preserve">
+</text><text x="50.00px" y="119.60px" xml:space="preserve">Çıplak Claude API
+</text><text x="50.00px" y="137.80px" xml:space="preserve">[████████████████████████████████████████]  180,000 token · $1.80 · 12 dk
+</text><text x="50.00px" y="156.00px" xml:space="preserve">(cache yok)
+</text><text x="50.00px" y="174.20px" xml:space="preserve">
+</text><text x="50.00px" y="192.40px" xml:space="preserve">🔥 kanka (opt. aktif)
+</text><text x="50.00px" y="210.60px" xml:space="preserve">[████████████]                                54,000 token · $0.45 ·  4 dk
+</text><text x="50.00px" y="228.80px" xml:space="preserve">(cache + izole context + paralel async)
+</text><text x="50.00px" y="247.00px" xml:space="preserve">
+</text><text x="50.00px" y="265.20px" xml:space="preserve">═══════════════════════════════════════════════════════════════════
+</text><text x="50.00px" y="283.40px" xml:space="preserve">Kazanç:  -70% token  ·  -75% maliyet  ·  -66% süre
+</text><text x="50.00px" y="301.60px" xml:space="preserve">
+</text><text x="50.00px" y="319.80px" xml:space="preserve">✨ Bonus: Claude Pro/Max OAuth → marginal cost = $0
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>

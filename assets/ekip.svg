@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="602.98" height="492.17" xmlns="http://www.w3.org/2000/svg">
+<rect width="562.98" height="452.17" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="13.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="83.20px" xml:space="preserve">&gt; /ekip
+</text><text x="50.00px" y="101.40px" xml:space="preserve">
+</text><text x="50.00px" y="119.60px" xml:space="preserve">🤝 kanka ekibi — Kullanılabilir subagent&apos;lar
+</text><text x="50.00px" y="137.80px" xml:space="preserve">────────────────────────────────────────────────────────────
+</text><text x="50.00px" y="156.00px" xml:space="preserve">  docs-yazari       — README, API docs, JSDoc, Mermaid
+</text><text x="50.00px" y="174.20px" xml:space="preserve">  gozden-geciren    — Code review, kalite/güvenlik
+</text><text x="50.00px" y="192.40px" xml:space="preserve">  hata-avcisi       — Bug analizi, root cause, stack trace
+</text><text x="50.00px" y="210.60px" xml:space="preserve">  isci              — Genel amaçlı uygulamacı, tam yetki
+</text><text x="50.00px" y="228.80px" xml:space="preserve">  kasif             — Hızlı kod keşif, sıkıştırılmış context
+</text><text x="50.00px" y="247.00px" xml:space="preserve">  mimar             — Sistem mimarisi, trade-off analizi
+</text><text x="50.00px" y="265.20px" xml:space="preserve">  planlayici        — Uygulama planı çıkarma (değişiklik yapmaz)
+</text><text x="50.00px" y="283.40px" xml:space="preserve">  refactorcu        — Davranış korunarak refactor
+</text><text x="50.00px" y="301.60px" xml:space="preserve">  test-yazari       — Test senaryoları + test kodu
+</text><text x="50.00px" y="319.80px" xml:space="preserve">
+</text><text x="50.00px" y="338.00px" xml:space="preserve">Workflow komutları:
+</text><text x="50.00px" y="356.20px" xml:space="preserve">  /yap &lt;görev&gt;              kasif → planlayici → isci
+</text><text x="50.00px" y="374.40px" xml:space="preserve">  /plan-yap &lt;görev&gt;         kasif → planlayici
+</text><text x="50.00px" y="392.60px" xml:space="preserve">  /yap-ve-incele &lt;görev&gt;    isci → gozden-geciren → isci
+</text><text x="50.00px" y="410.80px" xml:space="preserve">  /hata-ayikla &lt;bug&gt;        kasif → hata-avcisi
+</text><text x="50.00px" y="429.00px" xml:space="preserve">  /refactor-incele &lt;hedef&gt;  kasif → refactorcu → gozden-geciren
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>
