@@ -15,7 +15,7 @@
  *   KANKA_NO_UPDATE_PROMPT=1    — Header'da uyarı görünmez
  *
  * Cache şeması (~/.kanka/son-versiyon-kontrol):
- *   { ts: ISO8601, mevcut: "0.4.0", latest: "0.5.0", guncelMi: false }
+ *   { ts: ISO8601, mevcut: "0.4.1", latest: "0.5.0", guncelMi: false }
  */
 
 import * as fs from "node:fs";
@@ -52,7 +52,7 @@ interface VersiyonCache {
  * package.json'dan mevcut versiyonu oku.
  * cli.ts'deki sabit hardcoded ile aynı olmalı.
  */
-const MEVCUT_VERSIYON = "0.4.0";
+const MEVCUT_VERSIYON = "0.4.1";
 
 /**
  * Semver karşılaştırma — a < b ise -1, a > b ise 1, eşit ise 0.

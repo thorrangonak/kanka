@@ -10,3 +10,8 @@ dist/
 # pi (added by gitignore-pi-dir extension)
 .pi/
 context.md
+
+# demo intermediate files (sadece build-hero.py commit'le)
+demo/*.txt
+demo/*.tape
+demo/*.log

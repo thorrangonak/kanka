@@ -30,7 +30,7 @@ const execFileAsync = promisify(execFile);
 const PAKET_ADI = "@thorrangonak/kanka";
 
 // package.json'dan versiyonu oku (build sırasında dist'e kopyalanacak)
-const VERSION = "0.4.0";
+const VERSION = "0.4.1";
 
 /**
  * `kanka update` veya `kanka update --check` subcommand'ı mı?

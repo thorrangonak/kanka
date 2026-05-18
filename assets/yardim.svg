@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="626.19" height="1055.65" xmlns="http://www.w3.org/2000/svg">
+<rect width="586.19" height="1015.65" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="13.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="81.90px" xml:space="preserve">
+</text><text x="50.00px" y="98.80px" xml:space="preserve">  ╦╔═╔═╗╔╗╔╦╔═╔═╗ 
+</text><text x="50.00px" y="115.70px" xml:space="preserve">  ╠╩╗╠═╣║║║╠╩╗╠═╣ 
+</text><text x="50.00px" y="132.60px" xml:space="preserve">  ╩ ╩╩ ╩╝╚╝╩ ╩╩ ╩ 
+</text><text x="50.00px" y="149.50px" xml:space="preserve">
+</text><text x="50.00px" y="166.40px" xml:space="preserve">  kanka v0.4.0  —  Kanka, şunu yapsana.
+</text><text x="50.00px" y="183.30px" xml:space="preserve">  Türkçe konuşan terminal kodlama asistanı
+</text><text x="50.00px" y="200.20px" xml:space="preserve">
+</text><text x="50.00px" y="217.10px" xml:space="preserve">  Yardım: /yardım    Çıkış: /çık veya Ctrl+C
+</text><text x="50.00px" y="234.00px" xml:space="preserve">
+</text><text x="50.00px" y="250.90px" xml:space="preserve">
+</text><text x="50.00px" y="267.80px" xml:space="preserve">kanka — Türkçe konuşan terminal kodlama asistanı
+</text><text x="50.00px" y="284.70px" xml:space="preserve">
+</text><text x="50.00px" y="301.60px" xml:space="preserve">KULLANIM
+</text><text x="50.00px" y="318.50px" xml:space="preserve">  kanka [seçenekler] [komut]
+</text><text x="50.00px" y="335.40px" xml:space="preserve">
+</text><text x="50.00px" y="352.30px" xml:space="preserve">SEÇENEKLER
+</text><text x="50.00px" y="369.20px" xml:space="preserve">  --yardım, -y       Bu yardım metnini göster
+</text><text x="50.00px" y="386.10px" xml:space="preserve">  --versiyon, -v     Versiyon numarasını göster
+</text><text x="50.00px" y="403.00px" xml:space="preserve">
+</text><text x="50.00px" y="419.90px" xml:space="preserve">SUBCOMMAND&apos;LAR
+</text><text x="50.00px" y="436.80px" xml:space="preserve">  kanka update              Latest sürüme güncelle (npm üzerinden)
+</text><text x="50.00px" y="453.70px" xml:space="preserve">  kanka update --check      Sadece kontrol et, güncelleme yapma
+</text><text x="50.00px" y="470.60px" xml:space="preserve">
+</text><text x="50.00px" y="487.50px" xml:space="preserve">ÖRNEK
+</text><text x="50.00px" y="504.40px" xml:space="preserve">  kanka                              İnteraktif moda başla
+</text><text x="50.00px" y="521.30px" xml:space="preserve">  kanka &quot;Bana bir Express app yaz&quot;   Doğrudan görev ver
+</text><text x="50.00px" y="538.20px" xml:space="preserve">  echo &quot;ne var ne yok&quot; | kanka       Stdin üzerinden mesaj gönder
+</text><text x="50.00px" y="555.10px" xml:space="preserve">
+</text><text x="50.00px" y="572.00px" xml:space="preserve">OTURUM İÇİ KOMUTLAR (Türkçe)
+</text><text x="50.00px" y="588.90px" xml:space="preserve">  /yardım            Komut listesi
+</text><text x="50.00px" y="605.80px" xml:space="preserve">  /çık               Oturumdan çık
+</text><text x="50.00px" y="622.70px" xml:space="preserve">  /temizle           Ekranı temizle
+</text><text x="50.00px" y="639.60px" xml:space="preserve">  /durum             Oturum durumu
+</text><text x="50.00px" y="656.50px" xml:space="preserve">  /oturum            Oturumları listele
+</text><text x="50.00px" y="673.40px" xml:space="preserve">  /yeni              Yeni oturum başlat
+</text><text x="50.00px" y="690.30px" xml:space="preserve">  /selam             kanka&apos;dan bir selam
+</text><text x="50.00px" y="707.20px" xml:space="preserve">
+</text><text x="50.00px" y="724.10px" xml:space="preserve">KİŞİLİK &amp; GÜNLÜK (yeni 🆕)
+</text><text x="50.00px" y="741.00px" xml:space="preserve">  /kisilik           Kişilik yönetimi (kanka/hoca/abi/patron)
+</text><text x="50.00px" y="757.90px" xml:space="preserve">  /kisilikler        Detaylı kişilik kataloğu
+</text><text x="50.00px" y="774.80px" xml:space="preserve">  /gunluk yaz &lt;not&gt;  Geliştirme günlüğüne kayıt
+</text><text x="50.00px" y="791.70px" xml:space="preserve">  /gunluk bugun      Bugünün notları
+</text><text x="50.00px" y="808.60px" xml:space="preserve">  /gunluk ara &lt;kw&gt;   Notlarda arama
+</text><text x="50.00px" y="825.50px" xml:space="preserve">
+</text><text x="50.00px" y="842.40px" xml:space="preserve">GÜNCELLEME
+</text><text x="50.00px" y="859.30px" xml:space="preserve">  /güncelle          Latest sürüme güncelle (interaktif onay)
+</text><text x="50.00px" y="876.20px" xml:space="preserve">  /versiyon-kontrol  Sadece kontrol et
+</text><text x="50.00px" y="893.10px" xml:space="preserve">  Devre dışı: KANKA_NO_UPDATE_CHECK=1 (kontrol kapanır)
+</text><text x="50.00px" y="910.00px" xml:space="preserve">                KANKA_NO_UPDATE_PROMPT=1 (header&apos;da uyarı görünmez)
+</text><text x="50.00px" y="926.90px" xml:space="preserve">
+</text><text x="50.00px" y="943.80px" xml:space="preserve">TERMİNAL ENTEGRASYONU
+</text><text x="50.00px" y="960.70px" xml:space="preserve">  /tab-title &lt;metin&gt; Manuel tab title (test)
+</text><text x="50.00px" y="977.60px" xml:space="preserve">  /bildir &lt;metin&gt;    Test bildirimi (OSC 9)
+</text><text x="50.00px" y="994.50px" xml:space="preserve">  Devre dışı: KANKA_NO_TERMINAL_INTEGRATION=1
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>

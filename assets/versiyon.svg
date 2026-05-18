@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="400.00" height="307.67" xmlns="http://www.w3.org/2000/svg">
+<rect width="360.00" height="267.67" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="14.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="84.60px" xml:space="preserve">$ kanka --versiyon
+</text><text x="50.00px" y="104.20px" xml:space="preserve">kanka v0.4.0
+</text><text x="50.00px" y="123.80px" xml:space="preserve">
+</text><text x="50.00px" y="143.40px" xml:space="preserve">$ kanka update --check
+</text><text x="50.00px" y="163.00px" xml:space="preserve">
+</text><text x="50.00px" y="182.60px" xml:space="preserve">📡 npm registry kontrol ediliyor...
+</text><text x="50.00px" y="202.20px" xml:space="preserve">✓ Zaten güncelsin kanka!
+</text><text x="50.00px" y="221.80px" xml:space="preserve">  Mevcut: 0.4.0
+</text><text x="50.00px" y="241.40px" xml:space="preserve">  Latest: 0.4.0
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>

@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="580" viewBox="0 0 900 580" font-family="Cascadia Code, Consolas, monospace">
+  <defs>
+    <style><![CDATA[
+@keyframes scene-1 {
+  0%   { opacity: 1; }
+  1.00%  { opacity: 1; }
+  11.50% { opacity: 1; }
+  12.50% { opacity: 0; }
+  99.99% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes scene-2 {
+  0%   { opacity: 0; }
+  12.50%  { opacity: 0; }
+  13.50% { opacity: 1; }
+  24.00% { opacity: 1; }
+  25.00% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-3 {
+  0%   { opacity: 0; }
+  25.00%  { opacity: 0; }
+  26.00% { opacity: 1; }
+  36.50% { opacity: 1; }
+  37.50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-4 {
+  0%   { opacity: 0; }
+  37.50%  { opacity: 0; }
+  38.50% { opacity: 1; }
+  49.00% { opacity: 1; }
+  50.00% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-5 {
+  0%   { opacity: 0; }
+  50.00%  { opacity: 0; }
+  51.00% { opacity: 1; }
+  61.50% { opacity: 1; }
+  62.50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-6 {
+  0%   { opacity: 0; }
+  62.50%  { opacity: 0; }
+  63.50% { opacity: 1; }
+  74.00% { opacity: 1; }
+  75.00% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-7 {
+  0%   { opacity: 0; }
+  75.00%  { opacity: 0; }
+  76.00% { opacity: 1; }
+  86.50% { opacity: 1; }
+  87.50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes scene-8 {
+  0%   { opacity: 0; }
+  87.50%  { opacity: 0; }
+  88.50% { opacity: 1; }
+  99.00% { opacity: 1; }
+  100.00% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.scene-1 {
+  animation: scene-1 48s infinite;
+}
+.scene-2 {
+  animation: scene-2 48s infinite;
+}
+.scene-3 {
+  animation: scene-3 48s infinite;
+}
+.scene-4 {
+  animation: scene-4 48s infinite;
+}
+.scene-5 {
+  animation: scene-5 48s infinite;
+}
+.scene-6 {
+  animation: scene-6 48s infinite;
+}
+.scene-7 {
+  animation: scene-7 48s infinite;
+}
+.scene-8 {
+  animation: scene-8 48s infinite;
+}
+@keyframes nav-1 {
+  0%, 0.00%   { fill: #7f849c; font-weight: normal; }
+  0.50%, 12.00% { fill: #94e2d5; font-weight: bold; }
+  12.50%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-1 {
+  animation: nav-1 48s infinite;
+}
+@keyframes nav-2 {
+  0%, 12.50%   { fill: #7f849c; font-weight: normal; }
+  13.00%, 24.50% { fill: #94e2d5; font-weight: bold; }
+  25.00%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-2 {
+  animation: nav-2 48s infinite;
+}
+@keyframes nav-3 {
+  0%, 25.00%   { fill: #7f849c; font-weight: normal; }
+  25.50%, 37.00% { fill: #94e2d5; font-weight: bold; }
+  37.50%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-3 {
+  animation: nav-3 48s infinite;
+}
+@keyframes nav-4 {
+  0%, 37.50%   { fill: #7f849c; font-weight: normal; }
+  38.00%, 49.50% { fill: #94e2d5; font-weight: bold; }
+  50.00%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-4 {
+  animation: nav-4 48s infinite;
+}
+@keyframes nav-5 {
+  0%, 50.00%   { fill: #7f849c; font-weight: normal; }
+  50.50%, 62.00% { fill: #94e2d5; font-weight: bold; }
+  62.50%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-5 {
+  animation: nav-5 48s infinite;
+}
+@keyframes nav-6 {
+  0%, 62.50%   { fill: #7f849c; font-weight: normal; }
+  63.00%, 74.50% { fill: #94e2d5; font-weight: bold; }
+  75.00%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-6 {
+  animation: nav-6 48s infinite;
+}
+@keyframes nav-7 {
+  0%, 75.00%   { fill: #7f849c; font-weight: normal; }
+  75.50%, 87.00% { fill: #94e2d5; font-weight: bold; }
+  87.50%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-7 {
+  animation: nav-7 48s infinite;
+}
+@keyframes nav-8 {
+  0%, 87.50%   { fill: #7f849c; font-weight: normal; }
+  88.00%, 99.50% { fill: #94e2d5; font-weight: bold; }
+  100.00%, 100%   { fill: #7f849c; font-weight: normal; }
+}
+.nav-8 {
+  animation: nav-8 48s infinite;
+}
+@keyframes p1-0 {
+  0%, 0.00% { opacity: 0; }
+  0.00% { opacity: 0; }
+  0.30% { opacity: 1; }
+  3.12% { opacity: 1; }
+  3.42%, 100% { opacity: 0; }
+}
+@keyframes p1-1 {
+  0%, 0.00% { opacity: 0; }
+  3.12% { opacity: 0; }
+  3.42% { opacity: 1; }
+  6.25% { opacity: 1; }
+  6.55%, 100% { opacity: 0; }
+}
+@keyframes p1-2 {
+  0%, 0.00% { opacity: 0; }
+  6.25% { opacity: 0; }
+  6.55% { opacity: 1; }
+  9.38% { opacity: 1; }
+  9.68%, 100% { opacity: 0; }
+}
+@keyframes p1-3 {
+  0%, 0.00% { opacity: 0; }
+  9.38% { opacity: 0; }
+  9.68% { opacity: 1; }
+  12.50% { opacity: 1; }
+  12.80%, 100% { opacity: 0; }
+}
+@keyframes g2-0 {
+  0%, 12.50% { opacity: 0; }
+  13.12% { opacity: 0; }
+  13.43%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-1 {
+  0%, 12.50% { opacity: 0; }
+  14.12% { opacity: 0; }
+  14.43%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-2 {
+  0%, 12.50% { opacity: 0; }
+  14.75% { opacity: 0; }
+  15.05%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-4 {
+  0%, 12.50% { opacity: 0; }
+  15.88% { opacity: 0; }
+  16.18%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-5 {
+  0%, 12.50% { opacity: 0; }
+  16.88% { opacity: 0; }
+  17.18%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-7 {
+  0%, 12.50% { opacity: 0; }
+  18.25% { opacity: 0; }
+  18.55%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-9 {
+  0%, 12.50% { opacity: 0; }
+  19.25% { opacity: 0; }
+  19.55%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-10 {
+  0%, 12.50% { opacity: 0; }
+  19.62% { opacity: 0; }
+  19.93%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-11 {
+  0%, 12.50% { opacity: 0; }
+  20.25% { opacity: 0; }
+  20.55%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-12 {
+  0%, 12.50% { opacity: 0; }
+  20.75% { opacity: 0; }
+  21.05%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-13 {
+  0%, 12.50% { opacity: 0; }
+  21.50% { opacity: 0; }
+  21.80%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes g2-14 {
+  0%, 12.50% { opacity: 0; }
+  22.12% { opacity: 0; }
+  22.43%, 25.00% { opacity: 1; }
+  25.01%, 100% { opacity: 0; }
+}
+@keyframes tab-0 {
+  0%, 25.00% { opacity: 0; }
+  25.00% { opacity: 0; }
+  25.30% { opacity: 1; }
+  27.50% { opacity: 1; }
+  27.80%, 100% { opacity: 0; }
+}
+@keyframes tab-1 {
+  0%, 25.00% { opacity: 0; }
+  27.50% { opacity: 0; }
+  27.80% { opacity: 1; }
+  30.00% { opacity: 1; }
+  30.30%, 100% { opacity: 0; }
+}
+@keyframes tab-2 {
+  0%, 25.00% { opacity: 0; }
+  30.00% { opacity: 0; }
+  30.30% { opacity: 1; }
+  32.50% { opacity: 1; }
+  32.80%, 100% { opacity: 0; }
+}
+@keyframes tab-3 {
+  0%, 25.00% { opacity: 0; }
+  32.50% { opacity: 0; }
+  32.80% { opacity: 1; }
+  35.00% { opacity: 1; }
+  35.30%, 100% { opacity: 0; }
+}
+@keyframes tab-4 {
+  0%, 25.00% { opacity: 0; }
+  35.00% { opacity: 0; }
+  35.30% { opacity: 1; }
+  37.50% { opacity: 1; }
+  37.80%, 100% { opacity: 0; }
+}
+@keyframes toast-3 {
+  0%, 25.00% { opacity: 0; }
+  35.00% { opacity: 0; }
+  35.30%, 37.50% { opacity: 1; }
+  37.51%, 100% { opacity: 0; }
+}
+@keyframes notice-4 {
+  0%, 37.50% { opacity: 0; }
+  40.62% { opacity: 0; }
+  40.92%, 50.00% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+@keyframes cmd-4 {
+  0%, 37.50% { opacity: 0; }
+  44.38% { opacity: 0; }
+  44.67%, 50.00% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+@keyframes agent-0 {
+  0%, 50.00% { opacity: 0; }
+  50.00% { opacity: 0; }
+  50.30%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-1 {
+  0%, 50.00% { opacity: 0; }
+  50.83% { opacity: 0; }
+  51.13%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-2 {
+  0%, 50.00% { opacity: 0; }
+  51.67% { opacity: 0; }
+  51.97%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-3 {
+  0%, 50.00% { opacity: 0; }
+  52.50% { opacity: 0; }
+  52.80%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-4 {
+  0%, 50.00% { opacity: 0; }
+  53.33% { opacity: 0; }
+  53.63%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-5 {
+  0%, 50.00% { opacity: 0; }
+  54.17% { opacity: 0; }
+  54.47%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-6 {
+  0%, 50.00% { opacity: 0; }
+  55.00% { opacity: 0; }
+  55.30%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-7 {
+  0%, 50.00% { opacity: 0; }
+  55.83% { opacity: 0; }
+  56.13%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agent-8 {
+  0%, 50.00% { opacity: 0; }
+  56.67% { opacity: 0; }
+  56.97%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes agents-summary {
+  0%, 50.00% { opacity: 0; }
+  59.00% { opacity: 0; }
+  59.30%, 62.50% { opacity: 1; }
+  62.51%, 100% { opacity: 0; }
+}
+@keyframes chain-0 {
+  0%, 62.50% { opacity: 0; }
+  63.12% { opacity: 0; }
+  63.42%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes arrow-0 {
+  0%, 62.50% { opacity: 0; }
+  64.38% { opacity: 0; }
+  64.67%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes chain-1 {
+  0%, 62.50% { opacity: 0; }
+  65.62% { opacity: 0; }
+  65.92%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes arrow-1 {
+  0%, 62.50% { opacity: 0; }
+  66.88% { opacity: 0; }
+  67.17%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes chain-2 {
+  0%, 62.50% { opacity: 0; }
+  68.12% { opacity: 0; }
+  68.42%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-title {
+  0%, 62.50% { opacity: 0; }
+  70.00% { opacity: 0; }
+  70.30%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-0 {
+  0%, 62.50% { opacity: 0; }
+  70.25% { opacity: 0; }
+  70.55%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-0-done {
+  0%, 62.50% { opacity: 0; }
+  73.12% { opacity: 0; }
+  73.42%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-1 {
+  0%, 62.50% { opacity: 0; }
+  70.62% { opacity: 0; }
+  70.92%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-1-done {
+  0%, 62.50% { opacity: 0; }
+  73.50% { opacity: 0; }
+  73.80%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-2 {
+  0%, 62.50% { opacity: 0; }
+  71.00% { opacity: 0; }
+  71.30%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes async-2-done {
+  0%, 62.50% { opacity: 0; }
+  74.00% { opacity: 0; }
+  74.30%, 75.00% { opacity: 1; }
+  75.01%, 100% { opacity: 0; }
+}
+@keyframes token-0 {
+  0%, 75.00% { opacity: 0; }
+  75.62% { opacity: 0; }
+  75.92%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes token-1 {
+  0%, 75.00% { opacity: 0; }
+  77.50% { opacity: 0; }
+  77.80%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes token-2 {
+  0%, 75.00% { opacity: 0; }
+  79.38% { opacity: 0; }
+  79.67%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes chart-title {
+  0%, 75.00% { opacity: 0; }
+  81.50% { opacity: 0; }
+  81.80%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes bar-cıplak {
+  0%, 75.00% { opacity: 0; }
+  82.25% { opacity: 0; }
+  82.55%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes bar-kanka {
+  0%, 75.00% { opacity: 0; }
+  83.50% { opacity: 0; }
+  83.80%, 87.50% { opacity: 1; }
+  87.51%, 100% { opacity: 0; }
+}
+@keyframes prov-0 {
+  0%, 87.50% { opacity: 0; }
+  87.50% { opacity: 0; }
+  87.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-1 {
+  0%, 87.50% { opacity: 0; }
+  88.00% { opacity: 0; }
+  88.30%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-2 {
+  0%, 87.50% { opacity: 0; }
+  88.50% { opacity: 0; }
+  88.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-3 {
+  0%, 87.50% { opacity: 0; }
+  89.00% { opacity: 0; }
+  89.30%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-4 {
+  0%, 87.50% { opacity: 0; }
+  89.50% { opacity: 0; }
+  89.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-5 {
+  0%, 87.50% { opacity: 0; }
+  90.00% { opacity: 0; }
+  90.30%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-6 {
+  0%, 87.50% { opacity: 0; }
+  90.50% { opacity: 0; }
+  90.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-7 {
+  0%, 87.50% { opacity: 0; }
+  91.00% { opacity: 0; }
+  91.30%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-8 {
+  0%, 87.50% { opacity: 0; }
+  91.50% { opacity: 0; }
+  91.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes prov-9 {
+  0%, 87.50% { opacity: 0; }
+  92.00% { opacity: 0; }
+  92.30%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes login-title {
+  0%, 87.50% { opacity: 0; }
+  93.25% { opacity: 0; }
+  93.55%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-0 {
+  0%, 87.50% { opacity: 0; }
+  93.75% { opacity: 0; }
+  94.05%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-1 {
+  0%, 87.50% { opacity: 0; }
+  94.38% { opacity: 0; }
+  94.67%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-2 {
+  0%, 87.50% { opacity: 0; }
+  95.62% { opacity: 0; }
+  95.92%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-4 {
+  0%, 87.50% { opacity: 0; }
+  96.50% { opacity: 0; }
+  96.80%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-5 {
+  0%, 87.50% { opacity: 0; }
+  96.88% { opacity: 0; }
+  97.17%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-6 {
+  0%, 87.50% { opacity: 0; }
+  97.25% { opacity: 0; }
+  97.55%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-7 {
+  0%, 87.50% { opacity: 0; }
+  97.62% { opacity: 0; }
+  97.92%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+@keyframes loginline-9 {
+  0%, 87.50% { opacity: 0; }
+  98.38% { opacity: 0; }
+  98.67%, 100.00% { opacity: 1; }
+  100.01%, 100% { opacity: 0; }
+}
+    ]]></style>
+  </defs>
+
+  <rect width="900" height="580" fill="#1e1e2e" rx="12"/>
+
+  <!-- macOS window butonları -->
+  <circle cx="22" cy="22" r="6" fill="#FF5A54"/>
+  <circle cx="42" cy="22" r="6" fill="#E6BF29"/>
+  <circle cx="62" cy="22" r="6" fill="#52C12B"/>
+
+  <text x="860" y="27" fill="#7f849c" font-size="12" text-anchor="end">kanka v0.4.0  ·  github.com/thorrangonak/kanka</text>
+
+  <g class="scene-1"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🎭 Aynı soru, farklı kişilik — anında değişir</text><text x="40" y="100" fill="#a6e3a1" font-size="15" font-weight="bold">$ kanka</text><text x="40" y="122" fill="#f9e2af" font-size="15">&gt; Bir fonksiyon nasıl yazılır?</text><g style="animation: p1-0 48s infinite; opacity:0;">
+            <text x="40" y="165" fill="#94e2d5" font-size="15" font-weight="bold">Aktif kişilik: 🤝 kanka</text>
+            <text x="40" y="195" fill="#cdd6f4" font-size="15">Tamamdır kanka, hemen yazalım.</text>
+            <text x="40" y="217" fill="#cba6f7" font-size="15">function selam() { ... }</text>
+        </g><g style="animation: p1-1 48s infinite; opacity:0;">
+            <text x="40" y="165" fill="#94e2d5" font-size="15" font-weight="bold">Aktif kişilik: 🧑‍🏫 hoca</text>
+            <text x="40" y="195" fill="#cdd6f4" font-size="15">Önce 'fonksiyon' nedir bakalım — bir görevi</text>
+            <text x="40" y="217" fill="#89b4fa" font-size="15">tekrar tekrar yapan kod parçası...</text>
+        </g><g style="animation: p1-2 48s infinite; opacity:0;">
+            <text x="40" y="165" fill="#94e2d5" font-size="15" font-weight="bold">Aktif kişilik: 🧔 abi</text>
+            <text x="40" y="195" fill="#cdd6f4" font-size="15">function add(a, b) { return a + b; }</text>
+            <text x="40" y="217" fill="#a6e3a1" font-size="15">Bu kadar.</text>
+        </g><g style="animation: p1-3 48s infinite; opacity:0;">
+            <text x="40" y="165" fill="#94e2d5" font-size="15" font-weight="bold">Aktif kişilik: 💼 patron</text>
+            <text x="40" y="195" fill="#cdd6f4" font-size="15">MVP için yeter: const fn = () =&gt; {}</text>
+            <text x="40" y="217" fill="#f9e2af" font-size="15">Sonra refactor ederiz.</text>
+        </g></g>
+  <g class="scene-2"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">📓 Geliştirme günlüğü — kararları unutma</text><g style="animation: g2-0 48s infinite; opacity:0;"><text x="40" y="100" fill="#f9e2af" font-size="15">&gt; /gunluk yaz auth refresh token bug düzeltildi #fix #auth</text></g><g style="animation: g2-1 48s infinite; opacity:0;"><text x="40" y="122" fill="#a6e3a1" font-size="15">✓ Günlüğe yazdım [#fix #auth]</text></g><g style="animation: g2-2 48s infinite; opacity:0;"><text x="40" y="144" fill="#7f849c" font-size="15">  → auth refresh token bug düzeltildi</text></g><g style="animation: g2-4 48s infinite; opacity:0;"><text x="40" y="188" fill="#f9e2af" font-size="15">&gt; /gunluk yaz NextJS 15'e migrate başladı #frontend</text></g><g style="animation: g2-5 48s infinite; opacity:0;"><text x="40" y="210" fill="#a6e3a1" font-size="15">✓ Günlüğe yazdım [#frontend]</text></g><g style="animation: g2-7 48s infinite; opacity:0;"><text x="40" y="254" fill="#f9e2af" font-size="15">&gt; /gunluk bugun</text></g><g style="animation: g2-9 48s infinite; opacity:0;"><text x="40" y="298" fill="#94e2d5" font-size="15">📓 Bugün (2 giriş) — kanka</text></g><g style="animation: g2-10 48s infinite; opacity:0;"><text x="40" y="320" fill="#7f849c" font-size="15">─────────────────────────────────────────────</text></g><g style="animation: g2-11 48s infinite; opacity:0;"><text x="40" y="342" fill="#cba6f7" font-size="15">  18.05.2026 14:23  [#fix #auth]</text></g><g style="animation: g2-12 48s infinite; opacity:0;"><text x="40" y="364" fill="#cdd6f4" font-size="15">  → auth refresh token bug düzeltildi</text></g><g style="animation: g2-13 48s infinite; opacity:0;"><text x="40" y="386" fill="#cba6f7" font-size="15">  18.05.2026 14:25  [#frontend]</text></g><g style="animation: g2-14 48s infinite; opacity:0;"><text x="40" y="408" fill="#cdd6f4" font-size="15">  → NextJS 15'e migrate başladı</text></g></g>
+  <g class="scene-3"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔔 Windows Terminal entegrasyonu — canlı tab title</text><g style="animation: tab-0 48s infinite; opacity:0;">
+            <rect x="40" y="98" width="430" height="34" rx="6" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+            <text x="60" y="120" fill="#a6e3a1" font-size="15" font-weight="bold">▶ kanka · hazır</text>
+        </g><g style="animation: tab-1 48s infinite; opacity:0;">
+            <rect x="40" y="98" width="430" height="34" rx="6" fill="#313244" stroke="#f9e2af" stroke-width="2"/>
+            <text x="60" y="120" fill="#f9e2af" font-size="15" font-weight="bold">▶ kanka · düşünüyor…</text>
+        </g><g style="animation: tab-2 48s infinite; opacity:0;">
+            <rect x="40" y="98" width="430" height="34" rx="6" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+            <text x="60" y="120" fill="#89b4fa" font-size="15" font-weight="bold">▶ kanka · komut çalıştırıyor</text>
+        </g><g style="animation: tab-3 48s infinite; opacity:0;">
+            <rect x="40" y="98" width="430" height="34" rx="6" fill="#313244" stroke="#cba6f7" stroke-width="2"/>
+            <text x="60" y="120" fill="#cba6f7" font-size="15" font-weight="bold">▶ kanka · dosya okuyor</text>
+        </g><g style="animation: tab-4 48s infinite; opacity:0;">
+            <rect x="40" y="98" width="430" height="34" rx="6" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+            <text x="60" y="120" fill="#a6e3a1" font-size="15" font-weight="bold">▶ kanka · hazır ✓</text>
+        </g><text x="40" y="190" fill="#94e2d5" font-size="15" font-weight="bold">Tab title canlı güncellenir:</text><text x="40" y="212" fill="#7f849c" font-size="15">  • Agent boştayken: 'hazır'</text><text x="40" y="234" fill="#7f849c" font-size="15">  • LLM düşünürken: 'düşünüyor…'</text><text x="40" y="256" fill="#7f849c" font-size="15">  • Bash çalışırken: 'komut çalıştırıyor'</text><text x="40" y="278" fill="#7f849c" font-size="15">  • Read sırasında: 'dosya okuyor'</text><text x="40" y="322" fill="#94e2d5" font-size="15" font-weight="bold">30s+ süren tool'lar bitince:</text><text x="40" y="344" fill="#f9e2af" font-size="15">  🔔 Masaüstü bildirim (OSC 9)</text><g style="animation: toast-3 48s infinite; opacity:0;">
+        <rect x="540" y="400" width="320" height="80" rx="8" fill="#313244" stroke="#f9e2af" stroke-width="2"/>
+        <text x="560" y="430" fill="#f9e2af" font-size="15" font-weight="bold">🔔 kanka</text>
+        <text x="560" y="455" fill="#cdd6f4" font-size="15">cevabım hazır (32s)</text>
+    </g></g>
+  <g class="scene-4"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔄 Otomatik güncelleme bildirimi — hep güncel kal</text><text x="40" y="110" fill="#cba6f7" font-size="15" font-weight="bold">  ╦╔═╔═╗╔╗╔╦╔═╔═╗</text><text x="40" y="132" fill="#cba6f7" font-size="15" font-weight="bold">  ╠╩╗╠═╣║║║╠╩╗╠═╣</text><text x="40" y="154" fill="#cba6f7" font-size="15" font-weight="bold">  ╩ ╩╩ ╩╝╚╝╩ ╩╩ ╩</text><text x="40" y="181" fill="#cdd6f4" font-size="15">kanka v0.4.0  ·  Türkçe konuşan terminal kodlama asistanı</text><text x="40" y="203" fill="#7f849c" font-size="13">/yardım komutlar  ·  /ekip subagent'lar  ·  /bilgi durum</text><g style="animation: notice-4 48s infinite; opacity:0;"><text x="40" y="235" fill="#f9e2af" font-size="15" font-weight="bold">📦 Yeni sürüm var: 0.4.0 → 0.5.0  ·  Güncellemek için: /güncelle</text></g><g style="animation: cmd-4 48s infinite; opacity:0;">
+        <text x="40" y="272" fill="#a6e3a1" font-size="15" font-weight="bold">$ kanka update</text>
+        <text x="40" y="294" fill="#89b4fa" font-size="15">📡 npm registry kontrol ediliyor...</text>
+        <text x="40" y="316" fill="#f9e2af" font-size="15">📦 Yeni sürüm var: 0.4.0 → 0.5.0</text>
+        <text x="40" y="338" fill="#7f849c" font-size="15">📥 npm install -g @thorrangonak/kanka@0.5.0...</text>
+        <text x="40" y="360" fill="#a6e3a1" font-size="15" font-weight="bold">✓ Tamamdır kanka! kanka@0.5.0 yüklendi.</text>
+    </g></g>
+  <g class="scene-5"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🤝 9 uzman subagent ekibi — hepsi Türkçe konuşur</text><text x="40" y="92" fill="#7f849c" font-size="13">Her agent izole context'te çalışır, kendi uzmanlık alanında özelleşmiştir.</text><g style="animation: agent-0 48s infinite; opacity:0;">
+            <rect x="40" y="125" width="260" height="75" rx="8" fill="#313244" stroke="#94e2d5" stroke-width="1.5" opacity="0.9"/>
+            <text x="52" y="150" fill="#a6e3a1" font-size="14" font-weight="bold">🔍 kasif</text>
+            <text x="52" y="175" fill="#cdd6f4" font-size="12">Kod keşif, hızlı recon</text>
+            <text x="52" y="190" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-1 48s infinite; opacity:0;">
+            <rect x="315" y="125" width="260" height="75" rx="8" fill="#313244" stroke="#89b4fa" stroke-width="1.5" opacity="0.9"/>
+            <text x="327" y="150" fill="#f9e2af" font-size="14" font-weight="bold">📋 planlayici</text>
+            <text x="327" y="175" fill="#cdd6f4" font-size="12">Uygulama planı çıkarır</text>
+            <text x="327" y="190" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-2 48s infinite; opacity:0;">
+            <rect x="590" y="125" width="260" height="75" rx="8" fill="#313244" stroke="#cba6f7" stroke-width="1.5" opacity="0.9"/>
+            <text x="602" y="150" fill="#cba6f7" font-size="14" font-weight="bold">⚙️  isci</text>
+            <text x="602" y="175" fill="#cdd6f4" font-size="12">Genel amaçlı uygulamacı</text>
+            <text x="602" y="190" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-3 48s infinite; opacity:0;">
+            <rect x="40" y="215" width="260" height="75" rx="8" fill="#313244" stroke="#fab387" stroke-width="1.5" opacity="0.9"/>
+            <text x="52" y="240" fill="#f38ba8" font-size="14" font-weight="bold">🔎 gozden-geciren</text>
+            <text x="52" y="265" fill="#cdd6f4" font-size="12">Code review, güvenlik</text>
+            <text x="52" y="280" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-4 48s infinite; opacity:0;">
+            <rect x="315" y="215" width="260" height="75" rx="8" fill="#313244" stroke="#f5c2e7" stroke-width="1.5" opacity="0.9"/>
+            <text x="327" y="240" fill="#f5c2e7" font-size="14" font-weight="bold">🏛️  mimar</text>
+            <text x="327" y="265" fill="#cdd6f4" font-size="12">Sistem mimarisi, trade-off</text>
+            <text x="327" y="280" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-5 48s infinite; opacity:0;">
+            <rect x="590" y="215" width="260" height="75" rx="8" fill="#313244" stroke="#f38ba8" stroke-width="1.5" opacity="0.9"/>
+            <text x="602" y="240" fill="#fab387" font-size="14" font-weight="bold">🐛 hata-avcisi</text>
+            <text x="602" y="265" fill="#cdd6f4" font-size="12">Bug analizi, root cause</text>
+            <text x="602" y="280" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-6 48s infinite; opacity:0;">
+            <rect x="40" y="305" width="260" height="75" rx="8" fill="#313244" stroke="#a6e3a1" stroke-width="1.5" opacity="0.9"/>
+            <text x="52" y="330" fill="#a6e3a1" font-size="14" font-weight="bold">🧪 test-yazari</text>
+            <text x="52" y="355" fill="#cdd6f4" font-size="12">Test senaryo + test kodu</text>
+            <text x="52" y="370" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-7 48s infinite; opacity:0;">
+            <rect x="315" y="305" width="260" height="75" rx="8" fill="#313244" stroke="#f9e2af" stroke-width="1.5" opacity="0.9"/>
+            <text x="327" y="330" fill="#f9e2af" font-size="14" font-weight="bold">♻️  refactorcu</text>
+            <text x="327" y="355" fill="#cdd6f4" font-size="12">Davranış koruyarak refactor</text>
+            <text x="327" y="370" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agent-8 48s infinite; opacity:0;">
+            <rect x="590" y="305" width="260" height="75" rx="8" fill="#313244" stroke="#89b4fa" stroke-width="1.5" opacity="0.9"/>
+            <text x="602" y="330" fill="#89b4fa" font-size="14" font-weight="bold">📖 docs-yazari</text>
+            <text x="602" y="355" fill="#cdd6f4" font-size="12">README, JSDoc, Mermaid</text>
+            <text x="602" y="370" fill="#7f849c" font-size="10">izole context · Türkçe</text>
+        </g><g style="animation: agents-summary 48s infinite; opacity:0;">
+        <text x="40" y="460" fill="#f9e2af" font-size="14" font-weight="bold">Çağırmak için: `delege` tool veya /yap, /plan-yap, /yap-ve-incele zincirleri →</text>
+    </g></g>
+  <g class="scene-6"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔗 Chain pipeline + paralel async — tek komutla tam akış</text><text x="40" y="100" fill="#f9e2af" font-size="15" font-weight="bold">&gt; /yap kullanıcı kayıt formu ekle, validation + test</text><text x="40" y="122" fill="#7f849c" font-size="13">↞ Chain başlatıldı: kasif → planlayici → isci</text><g style="animation: chain-0 48s infinite; opacity:0;">
+            <rect x="50" y="170" width="200" height="90" rx="10" fill="#313244" stroke="#94e2d5" stroke-width="2"/>
+            <text x="65" y="198" fill="#a6e3a1" font-size="15" font-weight="bold">🔍 kasif</text>
+            <text x="65" y="222" fill="#cdd6f4" font-size="12">Kod keşif...</text>
+            <text x="65" y="245" fill="#a6e3a1" font-size="11">✓ 4 dosya analiz edildi</text>
+        </g><g style="animation: arrow-0 48s infinite; opacity:0;">
+                <text x="255" y="225" fill="#94e2d5" font-size="22" font-weight="bold">→</text>
+            </g><g style="animation: chain-1 48s infinite; opacity:0;">
+            <rect x="300" y="170" width="200" height="90" rx="10" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+            <text x="315" y="198" fill="#f9e2af" font-size="15" font-weight="bold">📋 planlayici</text>
+            <text x="315" y="222" fill="#cdd6f4" font-size="12">Plan çıkar...</text>
+            <text x="315" y="245" fill="#a6e3a1" font-size="11">✓ 3 adımlı plan hazır</text>
+        </g><g style="animation: arrow-1 48s infinite; opacity:0;">
+                <text x="505" y="225" fill="#94e2d5" font-size="22" font-weight="bold">→</text>
+            </g><g style="animation: chain-2 48s infinite; opacity:0;">
+            <rect x="550" y="170" width="200" height="90" rx="10" fill="#313244" stroke="#cba6f7" stroke-width="2"/>
+            <text x="565" y="198" fill="#cba6f7" font-size="15" font-weight="bold">⚙️ isci</text>
+            <text x="565" y="222" fill="#cdd6f4" font-size="12">Uygula...</text>
+            <text x="565" y="245" fill="#a6e3a1" font-size="11">✓ 5 dosya yazıldı</text>
+        </g><g style="animation: async-title 48s infinite; opacity:0;">
+        <text x="40" y="305" fill="#f9e2af" font-size="15" font-weight="bold">⚡ Veya 3 agent paralel async çalışsın:</text>
+    </g><g style="animation: async-0 48s infinite; opacity:0;">
+            <text x="50" y="355" fill="#94e2d5" font-size="13" font-weight="bold">🔍 kasif</text>
+            <text x="220" y="355" fill="#cdd6f4" font-size="12">frontend keşif</text>
+            <rect x="480" y="344" width="380" height="18" rx="4" fill="#45475a" opacity="0.5"/>
+        </g><g style="animation: async-0-done 48s infinite; opacity:0;">
+            <rect x="480" y="344" width="380" height="18" rx="4" fill="#94e2d5" opacity="0.6"/>
+            <text x="865" y="357" fill="#a6e3a1" font-size="14" font-weight="bold">✓</text>
+        </g><g style="animation: async-1 48s infinite; opacity:0;">
+            <text x="50" y="390" fill="#a6e3a1" font-size="13" font-weight="bold">🧪 test-yazari</text>
+            <text x="220" y="390" fill="#cdd6f4" font-size="12">backend test'leri</text>
+            <rect x="480" y="379" width="380" height="18" rx="4" fill="#45475a" opacity="0.5"/>
+        </g><g style="animation: async-1-done 48s infinite; opacity:0;">
+            <rect x="480" y="379" width="380" height="18" rx="4" fill="#a6e3a1" opacity="0.6"/>
+            <text x="865" y="392" fill="#a6e3a1" font-size="14" font-weight="bold">✓</text>
+        </g><g style="animation: async-2 48s infinite; opacity:0;">
+            <text x="50" y="425" fill="#fab387" font-size="13" font-weight="bold">🔎 gozden-geciren</text>
+            <text x="220" y="425" fill="#cdd6f4" font-size="12">PR review</text>
+            <rect x="480" y="414" width="380" height="18" rx="4" fill="#45475a" opacity="0.5"/>
+        </g><g style="animation: async-2-done 48s infinite; opacity:0;">
+            <rect x="480" y="414" width="380" height="18" rx="4" fill="#fab387" opacity="0.6"/>
+            <text x="865" y="427" fill="#a6e3a1" font-size="14" font-weight="bold">✓</text>
+        </g></g>
+  <g class="scene-7"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">💰 Token tasarrufu — daha az maliyet, daha hızlı cevap</text><text x="40" y="92" fill="#7f849c" font-size="13">3 katmanlı optimizasyon: cache + izole context + paralel çalışma</text><g style="animation: token-0 48s infinite; opacity:0;">
+            <rect x="40" y="125" width="270" height="140" rx="10" fill="#313244" stroke="#a6e3a1" stroke-width="2"/>
+            <text x="55" y="155" fill="#a6e3a1" font-size="15" font-weight="bold">💾 Prompt Cache</text>
+            <text x="230" y="160" fill="#a6e3a1" font-size="24" font-weight="bold">~70%</text>
+            <text x="230" y="178" fill="#7f849c" font-size="10">tasarruf</text>
+            <text x="55" y="193" fill="#7f849c" font-size="11">────────────────────────────</text>
+            <text x="55" y="220" fill="#cdd6f4" font-size="12">• Anthropic cache hit</text><text x="55" y="236" fill="#cdd6f4" font-size="12">• Sistem prompt + skill'ler</text><text x="55" y="252" fill="#cdd6f4" font-size="12">• 5dk TTL</text>
+        </g><g style="animation: token-1 48s infinite; opacity:0;">
+            <rect x="328" y="125" width="270" height="140" rx="10" fill="#313244" stroke="#89b4fa" stroke-width="2"/>
+            <text x="343" y="155" fill="#89b4fa" font-size="15" font-weight="bold">🔒 İzole Context</text>
+            <text x="518" y="160" fill="#89b4fa" font-size="24" font-weight="bold">~50%</text>
+            <text x="518" y="178" fill="#7f849c" font-size="10">tasarruf</text>
+            <text x="343" y="193" fill="#7f849c" font-size="11">────────────────────────────</text>
+            <text x="343" y="220" fill="#cdd6f4" font-size="12">• Subagent kendi context'inde</text><text x="343" y="236" fill="#cdd6f4" font-size="12">• Ana sohbet şişmiyor</text><text x="343" y="252" fill="#cdd6f4" font-size="12">• sadece özet dönüyor</text>
+        </g><g style="animation: token-2 48s infinite; opacity:0;">
+            <rect x="616" y="125" width="270" height="140" rx="10" fill="#313244" stroke="#cba6f7" stroke-width="2"/>
+            <text x="631" y="155" fill="#cba6f7" font-size="15" font-weight="bold">⚡ Paralel Async</text>
+            <text x="806" y="160" fill="#cba6f7" font-size="24" font-weight="bold">~3x</text>
+            <text x="806" y="178" fill="#7f849c" font-size="10">tasarruf</text>
+            <text x="631" y="193" fill="#7f849c" font-size="11">────────────────────────────</text>
+            <text x="631" y="220" fill="#cdd6f4" font-size="12">• 3 agent aynı anda çalışır</text><text x="631" y="236" fill="#cdd6f4" font-size="12">• Wall-clock hız</text><text x="631" y="252" fill="#cdd6f4" font-size="12">• Toplam token aynı</text>
+        </g><g style="animation: chart-title 48s infinite; opacity:0;">
+        <text x="40" y="305" fill="#f9e2af" font-size="15" font-weight="bold">Örnek: 5 dosyalık refactor projesi — token karşılaştırması</text>
+    </g><g style="animation: bar-cıplak 48s infinite; opacity:0;">
+        <text x="50" y="364" fill="#cdd6f4" font-size="14" font-weight="bold">Çıplak LLM</text>
+        <text x="50" y="380" fill="#7f849c" font-size="11">(cache yok)</text>
+        <rect x="240" y="348" width="600" height="36" rx="5" fill="#f38ba8" opacity="0.7"/>
+        <text x="710" y="373" fill="#1e1e2e" font-size="13" font-weight="bold">~180,000 token · $1.80</text>
+    </g><g style="animation: bar-kanka 48s infinite; opacity:0;">
+        <text x="50" y="425" fill="#94e2d5" font-size="14" font-weight="bold">🔥 kanka</text>
+        <text x="50" y="441" fill="#7f849c" font-size="11">(opt. aktif)</text>
+        <rect x="240" y="409" width="180.0" height="36" rx="5" fill="#a6e3a1" opacity="0.85"/>
+        <text x="430.0" y="434" fill="#a6e3a1" font-size="13" font-weight="bold">~54,000 token · $0.45  →  -70%</text>
+    </g></g>
+  <g class="scene-8"><text x="40" y="60" fill="#94e2d5" font-size="17" font-weight="bold">🔌 İstediğin LLM'i bağla — tek paket, 10+ provider native</text><text x="40" y="92" fill="#7f849c" font-size="13">Claude, GPT, Gemini, GLM, Grok, Llama, Trendyol... API key koy, kullan</text><g style="animation: prov-0 48s infinite; opacity:0;">
+            <rect x="40" y="125" width="165" height="75" rx="8" fill="#313244" stroke="#d97757" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="56" cy="147" r="8" fill="#d97757"/>
+            <text x="72" y="152" fill="#d97757" font-size="14" font-weight="bold">Claude</text>
+            <text x="52" y="172" fill="#7f849c" font-size="11">Anthropic</text>
+            <text x="52" y="189" fill="#cdd6f4" font-size="10">Opus 4.7 / Sonnet</text>
+        </g><g style="animation: prov-1 48s infinite; opacity:0;">
+            <rect x="215" y="125" width="165" height="75" rx="8" fill="#313244" stroke="#10a37f" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="231" cy="147" r="8" fill="#10a37f"/>
+            <text x="247" y="152" fill="#10a37f" font-size="14" font-weight="bold">GPT</text>
+            <text x="227" y="172" fill="#7f849c" font-size="11">OpenAI</text>
+            <text x="227" y="189" fill="#cdd6f4" font-size="10">GPT-5 / o4</text>
+        </g><g style="animation: prov-2 48s infinite; opacity:0;">
+            <rect x="390" y="125" width="165" height="75" rx="8" fill="#313244" stroke="#4285f4" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="406" cy="147" r="8" fill="#4285f4"/>
+            <text x="422" y="152" fill="#4285f4" font-size="14" font-weight="bold">Gemini</text>
+            <text x="402" y="172" fill="#7f849c" font-size="11">Google</text>
+            <text x="402" y="189" fill="#cdd6f4" font-size="10">2.5 Pro / Flash</text>
+        </g><g style="animation: prov-3 48s infinite; opacity:0;">
+            <rect x="565" y="125" width="165" height="75" rx="8" fill="#313244" stroke="#7c3aed" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="581" cy="147" r="8" fill="#7c3aed"/>
+            <text x="597" y="152" fill="#7c3aed" font-size="14" font-weight="bold">GLM</text>
+            <text x="577" y="172" fill="#7f849c" font-size="11">Z.AI</text>
+            <text x="577" y="189" fill="#cdd6f4" font-size="10">GLM-5.1 / 4.6</text>
+        </g><g style="animation: prov-4 48s infinite; opacity:0;">
+            <rect x="740" y="125" width="165" height="75" rx="8" fill="#313244" stroke="#1da1f2" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="756" cy="147" r="8" fill="#1da1f2"/>
+            <text x="772" y="152" fill="#1da1f2" font-size="14" font-weight="bold">Grok</text>
+            <text x="752" y="172" fill="#7f849c" font-size="11">xAI</text>
+            <text x="752" y="189" fill="#cdd6f4" font-size="10">Grok 4 / Fast</text>
+        </g><g style="animation: prov-5 48s infinite; opacity:0;">
+            <rect x="40" y="210" width="165" height="75" rx="8" fill="#313244" stroke="#0668e1" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="56" cy="232" r="8" fill="#0668e1"/>
+            <text x="72" y="237" fill="#0668e1" font-size="14" font-weight="bold">Llama</text>
+            <text x="52" y="257" fill="#7f849c" font-size="11">Meta</text>
+            <text x="52" y="274" fill="#cdd6f4" font-size="10">3.3 / 4 (lokal)</text>
+        </g><g style="animation: prov-6 48s infinite; opacity:0;">
+            <rect x="215" y="210" width="165" height="75" rx="8" fill="#313244" stroke="#6366f1" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="231" cy="232" r="8" fill="#6366f1"/>
+            <text x="247" y="237" fill="#6366f1" font-size="14" font-weight="bold">DeepSeek</text>
+            <text x="227" y="257" fill="#7f849c" font-size="11">DeepSeek</text>
+            <text x="227" y="274" fill="#cdd6f4" font-size="10">V3 / R1</text>
+        </g><g style="animation: prov-7 48s infinite; opacity:0;">
+            <rect x="390" y="210" width="165" height="75" rx="8" fill="#313244" stroke="#fa6b3a" stroke-width="3" opacity="0.95"/>
+            <circle cx="406" cy="232" r="8" fill="#fa6b3a"/>
+            <text x="422" y="237" fill="#fa6b3a" font-size="14" font-weight="bold">Trendyol</text>
+            <text x="402" y="257" fill="#7f849c" font-size="11">🇹🇷 yerel</text>
+            <text x="402" y="274" fill="#cdd6f4" font-size="10">Trendyol-LLM (TR)</text>
+        </g><g style="animation: prov-8 48s infinite; opacity:0;">
+            <rect x="565" y="210" width="165" height="75" rx="8" fill="#313244" stroke="#ec4899" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="581" cy="232" r="8" fill="#ec4899"/>
+            <text x="597" y="237" fill="#ec4899" font-size="14" font-weight="bold">MiniMax</text>
+            <text x="577" y="257" fill="#7f849c" font-size="11">MiniMax</text>
+            <text x="577" y="274" fill="#cdd6f4" font-size="10">abab6.5</text>
+        </g><g style="animation: prov-9 48s infinite; opacity:0;">
+            <rect x="740" y="210" width="165" height="75" rx="8" fill="#313244" stroke="#52525b" stroke-width="1.5" opacity="0.95"/>
+            <circle cx="756" cy="232" r="8" fill="#52525b"/>
+            <text x="772" y="237" fill="#52525b" font-size="14" font-weight="bold">Ollama</text>
+            <text x="752" y="257" fill="#7f849c" font-size="11">lokal</text>
+            <text x="752" y="274" fill="#cdd6f4" font-size="10">şey çalıştır local</text>
+        </g><g style="animation: login-title 48s infinite; opacity:0;">
+        <text x="40" y="320" fill="#f9e2af" font-size="15" font-weight="bold">Tek komutla giriş:</text>
+    </g><g style="animation: loginline-0 48s infinite; opacity:0;"><text x="50" y="350" fill="#a6e3a1" font-size="13">$ kanka</text></g><g style="animation: loginline-1 48s infinite; opacity:0;"><text x="50" y="368" fill="#f9e2af" font-size="13">&gt; /giriş                                          # provider listesi açılır</text></g><g style="animation: loginline-2 48s infinite; opacity:0;"><text x="50" y="386" fill="#f9e2af" font-size="13">&gt; /model                                          # canlı model değiştir (Ctrl+P ile cycle)</text></g><g style="animation: loginline-4 48s infinite; opacity:0;"><text x="50" y="422" fill="#7f849c" font-size="13"># Veya .env'e koy, kanka otomatik bulur:</text></g><g style="animation: loginline-5 48s infinite; opacity:0;"><text x="50" y="440" fill="#cdd6f4" font-size="13">ANTHROPIC_API_KEY=sk-ant-...</text></g><g style="animation: loginline-6 48s infinite; opacity:0;"><text x="50" y="458" fill="#cdd6f4" font-size="13">OPENAI_API_KEY=sk-proj-...</text></g><g style="animation: loginline-7 48s infinite; opacity:0;"><text x="50" y="476" fill="#cdd6f4" font-size="13">GEMINI_API_KEY=AIza...</text></g><g style="animation: loginline-9 48s infinite; opacity:0;"><text x="50" y="512" fill="#94e2d5" font-size="13">✨ OAuth da var: Claude Pro/Max ile $0 marginal cost</text></g></g>
+
+  <line x1="40" y1="528" x2="860" y2="528" stroke="#7f849c" stroke-width="1" opacity="0.3"/><text x="30" y="550" font-size="11" class="nav-1">🎭 Persona</text><text x="140" y="550" font-size="11" class="nav-2">📓 Günlük</text><text x="250" y="550" font-size="11" class="nav-3">🔔 Terminal</text><text x="360" y="550" font-size="11" class="nav-4">🔄 Update</text><text x="470" y="550" font-size="11" class="nav-5">🤝 Ekip</text><text x="580" y="550" font-size="11" class="nav-6">🔗 Chain</text><text x="690" y="550" font-size="11" class="nav-7">💰 Token</text><text x="800" y="550" font-size="11" class="nav-8">🔌 Multi-LLM</text>
+</svg>

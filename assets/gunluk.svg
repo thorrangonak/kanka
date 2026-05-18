@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg width="600.00" height="444.17" xmlns="http://www.w3.org/2000/svg">
+<rect width="560.00" height="404.17" fill="#282a36" x="20.00px" y="20.00px"/>
+<g font-family="Cascadia Code,Consolas,monospace" font-size="14.00px" fill="#f8f8f2" clip-path="url(#terminalMask)">
+<text x="50.00px" y="84.60px" xml:space="preserve">&gt; /gunluk yaz auth refresh token bug düzeltildi #fix #auth
+</text><text x="50.00px" y="104.20px" xml:space="preserve">✓ Günlüğe yazdım [#fix #auth]
+</text><text x="50.00px" y="123.80px" xml:space="preserve">  → auth refresh token bug düzeltildi
+</text><text x="50.00px" y="143.40px" xml:space="preserve">
+</text><text x="50.00px" y="163.00px" xml:space="preserve">&gt; /gunluk yaz NextJS 15&apos;e migrate başladı #frontend #nextjs
+</text><text x="50.00px" y="182.60px" xml:space="preserve">✓ Günlüğe yazdım [#frontend #nextjs]
+</text><text x="50.00px" y="202.20px" xml:space="preserve">
+</text><text x="50.00px" y="221.80px" xml:space="preserve">&gt; /gunluk bugun
+</text><text x="50.00px" y="241.40px" xml:space="preserve">
+</text><text x="50.00px" y="261.00px" xml:space="preserve">📓 Bugün (2 giriş) — kanka
+</text><text x="50.00px" y="280.60px" xml:space="preserve">─────────────────────────────────────────────────
+</text><text x="50.00px" y="300.20px" xml:space="preserve">  18.05.2026 14:23  [#fix #auth]
+</text><text x="50.00px" y="319.80px" xml:space="preserve">  → auth refresh token bug düzeltildi
+</text><text x="50.00px" y="339.40px" xml:space="preserve">
+</text><text x="50.00px" y="359.00px" xml:space="preserve">  18.05.2026 14:25  [#frontend #nextjs]
+</text><text x="50.00px" y="378.60px" xml:space="preserve">  → NextJS 15&apos;e migrate başladı
+</text>
+</g>
+<svg x="20.00px" y="20.00px"><circle cx="13.50" cy="12.00" r="5.50" fill="#FF5A54"/><circle cx="32.50" cy="12.00" r="5.50" fill="#E6BF29"/><circle cx="51.50" cy="12.00" r="5.50" fill="#52C12B"/></svg></svg>
