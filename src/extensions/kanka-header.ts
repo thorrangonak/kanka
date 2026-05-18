@@ -8,8 +8,9 @@
  */
 
 import type { ExtensionAPI, Theme } from "@earendil-works/pi-coding-agent";
+import { guncellemeUyariVar } from "./guncelle.js";
 
-const KANKA_VERSION = "0.3.3";
+const KANKA_VERSION = "0.4.0";
 
 function getKankaHeader(theme: Theme): string[] {
 	// ASCII art "kanka" — küçük ve şık
@@ -33,7 +34,19 @@ function getKankaHeader(theme: Theme): string[] {
 		"  github.com/thorrangonak/kanka  ·  \"Kanka, şunu yapsana.\""
 	);
 
-	return ["", ...logo, "", subtitle, "", hints, docs, ""];
+	// Güncelleme uyarısı (varsa)
+	const guncel = guncellemeUyariVar();
+	const guncelUyari = guncel
+		? theme.fg(
+				"warning",
+				`  📦 Yeni sürüm var: ${guncel.mevcut} → ${guncel.latest}  ·  Güncellemek için: /güncelle`,
+		  )
+		: null;
+
+	const satirlar = ["", ...logo, "", subtitle, "", hints, docs];
+	if (guncelUyari) satirlar.push(guncelUyari);
+	satirlar.push("");
+	return satirlar;
 }
 
 export default function kankaHeaderExtension(pi: ExtensionAPI) {

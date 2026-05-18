@@ -9,6 +9,11 @@ export { KANKA_SYSTEM_PROMPT } from "./system-prompt.js";
 export { printBanner, welcomeMessage } from "./banner.js";
 export { default as turkceModExtension } from "./extensions/turkce-mod.js";
 export { default as turkceKomutlarExtension } from "./extensions/turkce-komutlar.js";
+export { default as kisilikExtension } from "./extensions/kisilik.js";
+export { default as windowsTerminalExtension } from "./extensions/windows-terminal.js";
+export { default as gunlukExtension } from "./extensions/gunluk.js";
+export { default as bundledSkillYukleyiciExtension } from "./extensions/bundled-skill-yukleyici.js";
+export { default as guncelleExtension, guncellemeUyariVar } from "./extensions/guncelle.js";
 
 // Pi'nin temel SDK'sını da yeniden export et (kullanıcı kendi entegrasyonu için).
 export {

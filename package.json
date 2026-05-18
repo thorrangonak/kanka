@@ -1,6 +1,6 @@
 {
   "name": "@thorrangonak/kanka",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "kanka — Türkçe konuşan terminal kodlama asistanı. 'Kanka, şunu yapsana.'",
   "type": "module",
   "bin": {
@@ -21,7 +21,7 @@
   ],
   "scripts": {
     "build": "tsc && shx chmod +x dist/cli.js && npm run copy-bundled",
-    "copy-bundled": "shx mkdir -p dist/bundled-agents dist/bundled-prompts && shx cp bundled-agents/*.md dist/bundled-agents/ && shx cp bundled-prompts/*.md dist/bundled-prompts/",
+    "copy-bundled": "shx mkdir -p dist/bundled-agents dist/bundled-prompts dist/bundled-personas dist/bundled-skills && shx cp bundled-agents/*.md dist/bundled-agents/ && shx cp bundled-prompts/*.md dist/bundled-prompts/ && shx cp bundled-personas/*.md dist/bundled-personas/ && shx cp -r bundled-skills/* dist/bundled-skills/",
     "dev": "tsc --watch",
     "start": "node dist/cli.js",
     "clean": "shx rm -rf dist",
