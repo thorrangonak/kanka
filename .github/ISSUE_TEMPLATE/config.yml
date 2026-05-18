@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Sohbet / Soru-Cevap
+    url: https://github.com/thorrangonak/kanka/discussions
+    about: Bug/feature değil, genel soru ya da sohbet için Discussions'a git
+  - name: 📖 Dokümantasyon
+    url: https://github.com/thorrangonak/kanka#readme
+    about: README'de cevabı var mı bir bak
+  - name: 🗺️ Yol haritası
+    url: https://github.com/thorrangonak/kanka/blob/main/ROADMAP.md
+    about: Önerdiğin feature roadmap'te var mı bak
